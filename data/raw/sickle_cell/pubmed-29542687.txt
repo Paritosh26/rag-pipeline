@@ -1,0 +1,110 @@
+PMID- 29542687
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20190916
+LR  - 20250530
+IS  - 2056-676X (Electronic)
+IS  - 2056-676X (Linking)
+VI  - 4
+DP  - 2018 Mar 15
+TI  - Sickle cell disease.
+PG  - 18010
+LID - 10.1038/nrdp.2018.10 [doi]
+AB  - Sickle cell disease (SCD) is a group of inherited disorders caused by mutations 
+      in HBB, which encodes haemoglobin subunit beta. The incidence is estimated to be 
+      between 300,000 and 400,000 neonates globally each year, the majority in 
+      sub-Saharan Africa. Haemoglobin molecules that include mutant sickle beta-globin 
+      subunits can polymerize; erythrocytes that contain mostly haemoglobin polymers 
+      assume a sickled form and are prone to haemolysis. Other pathophysiological 
+      mechanisms that contribute to the SCD phenotype are vaso-occlusion and activation 
+      of the immune system. SCD is characterized by a remarkable phenotypic complexity. 
+      Common acute complications are acute pain events, acute chest syndrome and 
+      stroke; chronic complications (including chronic kidney disease) can damage all 
+      organs. Hydroxycarbamide, blood transfusions and haematopoietic stem cell 
+      transplantation can reduce the severity of the disease. Early diagnosis is 
+      crucial to improve survival, and universal newborn screening programmes have been 
+      implemented in some countries but are challenging in low-income, high-burden 
+      settings.
+FAU - Kato, Gregory J
+AU  - Kato GJ
+AD  - Heart, Lung and Blood Vascular Medicine Institute and the Division of 
+      Hematology-Oncology, Department of Medicine, University of Pittsburgh, 200 
+      Lothrop Street, Pittsburgh, PA 15261, USA.
+FAU - Piel, Frederic B
+AU  - Piel FB
+AD  - MRC-PHE Centre for Environment and Health, Department of Epidemiology and 
+      Biostatistics, School of Public Health, Faculty of Medicine, Imperial College 
+      London, London, UK.
+FAU - Reid, Clarice D
+AU  - Reid CD
+AD  - Sickle Cell Disease Branch, National Heart, Lung and Blood Institute, NIH, 
+      Bethesda, MD, USA.
+FAU - Gaston, Marilyn H
+AU  - Gaston MH
+AD  - The Gaston and Porter Health Improvement Center, Potomac, MD, USA.
+FAU - Ohene-Frempong, Kwaku
+AU  - Ohene-Frempong K
+AD  - Sickle Cell Foundation of Ghana, Kumasi, Ghana.
+FAU - Krishnamurti, Lakshmanan
+AU  - Krishnamurti L
+AD  - Division of Pediatric Hematology-Oncology-BMT, Department of Pediatrics, Emory 
+      University School of Medicine, Atlanta, GA, USA.
+FAU - Smith, Wally R
+AU  - Smith WR
+AD  - Division of General Internal Medicine, Department of Medicine, Virginia 
+      Commonwealth University, Richmond, VA, USA.
+FAU - Panepinto, Julie A
+AU  - Panepinto JA
+AD  - Department of Pediatrics, Hematology-Oncology-Bone Marrow Transplantation, 
+      Medical College of Wisconsin and Children's Hospital of Wisconsin, Milwaukee, WI, 
+      USA.
+FAU - Weatherall, David J
+AU  - Weatherall DJ
+AD  - MRC Molecular Haematology Unit, Weatherall Institute of Molecular Medicine, John 
+      Radcliffe Hospital, Headington, Oxford, UK.
+FAU - Costa, Fernando F
+AU  - Costa FF
+AD  - INCT de Sangue, Haematology and Haemotherapy Centre, School of Medicine, 
+      University of Campinas - UNICAMP, Campinas, Sao Paulo, Brazil.
+FAU - Vichinsky, Elliott P
+AU  - Vichinsky EP
+AD  - Hematology and Oncology, UCSF Benioff Children's Hospital, Oakland, University of 
+      California, San Francisco, CA, USA.
+LA  - eng
+GR  - MC_UU_00016/12/MRC_/Medical Research Council/United Kingdom
+GR  - MR/L01341X/1/MRC_/Medical Research Council/United Kingdom
+PT  - Journal Article
+PT  - Review
+DEP - 20180315
+PL  - England
+TA  - Nat Rev Dis Primers
+JT  - Nature reviews. Disease primers
+JID - 101672103
+SB  - IM
+CIN - Nat Rev Dis Primers. 2018 Aug 9;4(1):15. doi: 10.1038/s41572-018-0012-9. PMID: 
+      30093627
+CIN - Nat Rev Dis Primers. 2019 Apr 18;5(1):27. doi: 10.1038/s41572-019-0080-5. PMID: 
+      31000706
+CIN - Nat Rev Dis Primers. 2019 Apr 18;5(1):28. doi: 10.1038/s41572-019-0082-3. PMID: 
+      31000725
+MH  - Acute Chest Syndrome/etiology/mortality
+MH  - Anemia, Sickle Cell/*complications/*diagnosis/epidemiology
+MH  - Blood Transfusion/methods
+MH  - Disease Management
+MH  - Humans
+MH  - Infant, Newborn
+MH  - Neonatal Screening/methods
+MH  - Oxidative Stress/physiology
+MH  - Pain/etiology
+MH  - Quality of Life/psychology
+MH  - Stroke/etiology
+EDAT- 2018/03/16 06:00
+MHDA- 2019/09/17 06:00
+CRDT- 2018/03/16 06:00
+PHST- 2018/03/16 06:00 [entrez]
+PHST- 2018/03/16 06:00 [pubmed]
+PHST- 2019/09/17 06:00 [medline]
+AID - nrdp201810 [pii]
+AID - 10.1038/nrdp.2018.10 [doi]
+PST - epublish
+SO  - Nat Rev Dis Primers. 2018 Mar 15;4:18010. doi: 10.1038/nrdp.2018.10.

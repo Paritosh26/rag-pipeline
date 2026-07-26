@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/paritoshdutta/biomedical-rag/data/raw/sickle_cell)",
+      "Bash(curl -s \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=29542687,35788790,21131035,28423290,30332562,28159390,38661449,27637966,33428443&rettype=medline&retmode=text\" -o /Users/paritoshdutta/biomedical-rag/data/raw/sickle_cell/_batch.txt)",
+      "Bash(python3 -)",
+      "Bash(rm _batch.txt)",
+      "Bash(mv ../pubmed-20301551.txt ./pubmed-20301551.txt)",
+      "Bash(cd /Users/paritoshdutta/biomedical-rag/data/raw/sickle_cell *)",
+      "Bash(.venv/bin/python3 -m pytest -q)"
+    ],
+    "additionalDirectories": [
+      "/Users/paritoshdutta/biomedical-rag/data/raw/sickle_cell"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+PMID- 21131035
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20101228
+LR  - 20220408
+IS  - 1474-547X (Electronic)
+IS  - 0140-6736 (Linking)
+VI  - 376
+IP  - 9757
+DP  - 2010 Dec 11
+TI  - Sickle-cell disease.
+PG  - 2018-31
+LID - 10.1016/S0140-6736(10)61029-X [doi]
+AB  - Sickle-cell disease is one of the most common severe monogenic disorders in the 
+      world. Haemoglobin polymerisation, leading to erythrocyte rigidity and 
+      vaso-occlusion, is central to the pathophysiology of this disease, although the 
+      importance of chronic anaemia, haemolysis, and vasculopathy has been established. 
+      Clinical management is basic and few treatments have a robust evidence base. One 
+      of the main problems of sickle-cell disease in children is the development of 
+      cerebrovascular disease and cognitive impairment, and the role of blood 
+      transfusion and hydroxycarbamide for prevention of these complications is 
+      starting to be understood. Recurrent episodes of vaso-occlusion and inflammation 
+      result in progressive damage to most organs, including the brain, kidneys, lungs, 
+      bones, and cardiovascular system, which becomes apparent with increasing age. 
+      Most people with sickle-cell disease live in Africa, where little is known about 
+      this disease; however, we do know that the disorder follows a more severe 
+      clinical course in Africa than for the rest of the world and that infectious 
+      diseases have a role in causing this increased severity of sickle-cell disease. 
+      More work is needed to develop effective treatments that specifically target 
+      pathophysiological changes and clinical complications of sickle-cell disease.
+CI  - Copyright (c) 2010 Elsevier Ltd. All rights reserved.
+FAU - Rees, David C
+AU  - Rees DC
+AD  - Department of Paediatric Haematology, King's College Hospital NHS Foundation 
+      Trust, King's College London, London, UK. david.rees@kcl.ac.uk
+FAU - Williams, Thomas N
+AU  - Williams TN
+FAU - Gladwin, Mark T
+AU  - Gladwin MT
+LA  - eng
+GR  - 091758/WT_/Wellcome Trust/United Kingdom
+GR  - RC1DK085852/DK/NIDDK NIH HHS/United States
+GR  - R01HL098032/HL/NHLBI NIH HHS/United States
+GR  - 076934/WT_/Wellcome Trust/United Kingdom
+GR  - P30AR058910/AR/NIAMS NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20101203
+PL  - England
+TA  - Lancet
+JT  - Lancet (London, England)
+JID - 2985213R
+RN  - 0 (Antisickling Agents)
+RN  - 0 (Iron Chelating Agents)
+RN  - X6Q56QN5QC (Hydroxyurea)
+SB  - IM
+MH  - Acute Chest Syndrome/etiology/therapy
+MH  - Africa
+MH  - *Anemia, Sickle 
+      Cell/blood/classification/complications/diagnosis/epidemiology/therapy
+MH  - Antisickling Agents/therapeutic use
+MH  - Blood Transfusion
+MH  - Disease Susceptibility
+MH  - Erythrocytes/*pathology
+MH  - Gene Transfer Techniques
+MH  - Haplotypes
+MH  - Heart Diseases/etiology/therapy
+MH  - Hematopoietic Stem Cell Transplantation
+MH  - Hematopoietic Stem Cells
+MH  - Hemolysis
+MH  - Humans
+MH  - Hydroxyurea/therapeutic use
+MH  - Hypertension, Pulmonary/etiology/therapy
+MH  - Iron Chelating Agents/therapeutic use
+MH  - Kidney Diseases/etiology/therapy
+MH  - Mass Screening
+MH  - Nervous System Diseases/etiology/therapy
+MH  - Pain/etiology
+MH  - Pain Management
+MH  - Polymerization
+MH  - Severity of Illness Index
+EDAT- 2010/12/07 06:00
+MHDA- 2010/12/29 06:00
+CRDT- 2010/12/07 06:00
+PHST- 2010/12/07 06:00 [entrez]
+PHST- 2010/12/07 06:00 [pubmed]
+PHST- 2010/12/29 06:00 [medline]
+AID - S0140-6736(10)61029-X [pii]
+AID - 10.1016/S0140-6736(10)61029-X [doi]
+PST - ppublish
+SO  - Lancet. 2010 Dec 11;376(9757):2018-31. doi: 10.1016/S0140-6736(10)61029-X. Epub 
+      2010 Dec 3.

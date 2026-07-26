@@ -1,0 +1,72 @@
+# All non-secret application configuration lives here, in one file, under two
+# sections:
+#   default:      base values used regardless of environment
+#   environments: per-environment overrides, selected by the APP_ENV env var
+#                 (defaults to "local" if APP_ENV is unset)
+#
+# Secrets (DATABASE_URL, GEMINI_API_KEY) are deliberately NOT here -- they come
+# only from environment variables / .env, so a committed config file can never
+# silently override a real deployment's credentials (this bit us once already:
+# an old environment/local.yaml hardcoded a DATABASE_URL that silently beat the
+# .env value and pointed at a Postgres role that didn't exist).
+
+default:
+  app_name: biomedical-rag
+  app_version: 0.1.0
+  debug: false
+
+  # Connection pool sizing for the Postgres engine (SQLAlchemy create_engine).
+  database_pool_size: 5
+  database_max_overflow: 10
+  database_pool_pre_ping: true
+  vector_table_name: document_chunks
+
+  # embedding_dimension MUST match what embedding_model actually produces
+  # (all-MiniLM-L6-v2 -> 384). Changing embedding_model to a different-sized
+  # model requires updating this too, or the pgvector column type will mismatch.
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  embedding_dimension: 384
+
+  # Master switch: set to false to force extractive-only answers (no Gemini
+  # calls at all) regardless of whether GEMINI_API_KEY is set -- useful for
+  # cost control, demos without burning quota, or deterministic testing.
+  llm_enabled: true
+  llm_provider: gemini
+  # flash-lite carries a separate, higher free-tier daily quota than the
+  # standard flash tier -- switched after hitting flash's 20 req/day cap
+  # during heavy testing. Swap back to gemini-flash-latest for higher quality
+  # once on a paid tier or once quota stops being the binding constraint.
+  llm_model: gemini-flash-lite-latest
+  chunk_size: 500
+  chunk_overlap: 100
+  retrieval_top_k: 5
+  # cosine or l2 -- selects the pgvector distance operator used for search.
+  similarity_metric: cosine
+  # Below this top-retrieved-chunk score, skip the LLM call and go straight
+  # to the extractive fallback. Left at 0.0 (disabled/always-call) by design:
+  # live validation on this corpus showed a correct, on-topic answer scoring
+  # as low as 0.287 (rare drug name "exagamglogene autotemcel" vs. the
+  # general-purpose embedding model) while a genuinely out-of-scope question
+  # scored 0.392 -- higher. There's no threshold in that range that reliably
+  # separates "right answer, obscure vocabulary" from "wrong topic" on this
+  # embedding model, so an aggressive default would silently suppress correct
+  # answers. Tune this only after checking real score distributions for your
+  # corpus and query patterns; don't guess a value.
+  retrieval_score_threshold: 0.0
+  # Documents shorter than this (post-cleaning) are rejected by the tracked
+  # ingestion path (/ingest-pipeline) as too short to be meaningful.
+  min_document_length: 20
+  collection_name: biomedical-papers
+  prompt_template: |-
+    You answer using only the provided context.
+    Context:
+    {context}
+
+    Question: {question}
+    Answer:
+
+environments:
+  local:
+    debug: true
+  prod:
+    debug: false

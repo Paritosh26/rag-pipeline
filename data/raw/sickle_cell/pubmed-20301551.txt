@@ -1,0 +1,139 @@
+PMID- 20301551
+STAT- Publisher
+DRDT- 20250213
+CTDT- 20030915
+PB  - University of Washington, Seattle
+DP  - 1993
+TI  - Sickle Cell Disease.
+BTI - GeneReviews(®)
+AB  - CLINICAL CHARACTERISTICS: Sickle cell disease (SCD) is characterized by 
+      intermittent vaso-occlusive events and chronic hemolytic anemia. Vaso-occlusive 
+      events result in tissue ischemia leading to acute and chronic pain as well as 
+      organ damage that can affect any organ system, including the bones, spleen, 
+      liver, brain, lungs, kidneys, and joints. Dactylitis (pain and/or swelling of the 
+      hands or feet) is often the earliest manifestation of SCD. In children, the 
+      spleen can become engorged with blood cells in a "splenic sequestration." The 
+      spleen is particularly vulnerable to infarction and the majority of individuals 
+      with SCD who are not on hydroxyurea or transfusion therapy become functionally 
+      asplenic in early childhood, increasing their risk for certain types of bacterial 
+      infections, primarily encapsulated organisms. Acute chest syndrome (ACS) is a 
+      major cause of mortality in SCD. Chronic hemolysis can result in varying degrees 
+      of anemia, jaundice, cholelithiasis, and delayed growth and sexual maturation as 
+      well as activating pathways that contribute to the pathophysiology directly. 
+      Individuals with the highest rates of hemolysis are at higher risk for pulmonary 
+      artery hypertension, priapism, and leg ulcers and may be relatively protected 
+      from vaso-occlusive pain. DIAGNOSIS/TESTING: SCD encompasses a group of disorders 
+      characterized by the presence of at least one hemoglobin S allele (HbS; p.Glu6Val 
+      in HBB) and a second HBB pathogenic variant resulting in abnormal hemoglobin 
+      polymerization. Hb S/S (homozygous p.Glu6Val in HBB) accounts for the majority of 
+      SCD. Other forms of SCD result from compound heterozygosity for HbS with other 
+      specific pathogenic beta globin chain variants (e.g., sickle-hemoglobin C disease 
+      [Hb S/C], sickle beta-thalassemia [Hb S/β(+)-thalassemia and Hb 
+      S/β(0)-thalassemia], Hb S/D, Hb S/O(Arab), Hb S/E). The diagnosis of SCD is 
+      established by identification of significant quantities of HbS with or without an 
+      additional abnormal beta globin chain variant by hemoglobin assay or by 
+      identification of biallelic HBB pathogenic variants including at least one 
+      p.Glu6Val allele (e.g., homozygous p.Glu6Val; p.Glu6Val and a second HBB 
+      pathogenic variant) on molecular genetic testing. Newborn screening for SCD began 
+      in the United States in 1975 in New York and expanded to include all 50 states by 
+      2006. Newborn screening programs perform isoelectric focusing and/or 
+      high-performance liquid chromatography (HPLC) of an eluate of dried blood spots. 
+      Some newborn screening programs confirm results with molecular testing. 
+      MANAGEMENT: Targeted therapies: Disease-modulating pharmacotherapies 
+      (hydroxyurea, L-glutamine, and crizanlizumab); hematopoietic stem cell 
+      transplantation; gene therapy. Supportive care: Education of parents, caregivers, 
+      and affected individuals on avoidance of potential triggers of vaso-occlusion 
+      (dehydration, climate extremes, overexertion, and, when possible, trauma and 
+      infection), health maintenance, prophylactic medications, early interventions, 
+      warning signs of acute illness, pain management options, and urgent care plan; 
+      antibiotic prophylaxis for Streptococcus pneumoniæ; immunizations including those 
+      for asplenic individuals; folic acid supplementation; red blood cell (RBC) 
+      transfusion therapy and treatment for iron overload. Management of pain episodes 
+      includes reversal of inciting triggers, hydration, anti-inflammatory agents, and 
+      pain medication. Pain episodes are additionally managed with a multimodal 
+      approach (e.g., warmth, massage, distraction, acupuncture, biofeedback, 
+      self-hypnosis). RBC transfusion as needed for splenic sequestration; splenectomy 
+      may be necessary. Fever and suspected infection are treated with appropriate 
+      antibiotics. Life-threatening or severe complications (e.g., severe ACS, stroke, 
+      aplastic crisis, chronic kidney failure) are often treated with RBC transfusion 
+      or RBC exchange. Treatment of pulmonary hypertension generally includes treating 
+      inciting factors and optimizing SCD therapy to stop progression; severe priapism 
+      may require aspiration and irrigation. Angiotensin-converting enzyme inhibitors 
+      or angiotensin II receptor blockers for those with kidney disease with kidney 
+      transplant for end-stage kidney disease; mental health therapy and community 
+      resources. Surveillance: Periodic comprehensive medical and social evaluation, 
+      mental health and neurocognitive assessment, and routine dental care. Annual 
+      complete blood count with differential and reticulocyte count; annual 
+      transcranial Doppler to determine risk of stroke in all children with Hb S/S and 
+      Hb S/β(0)-thalassemia; annual developmental assessment throughout childhood; 
+      neurocognitive assessment prior to school entry and as needed; brain MRI in 
+      childhood when examination can be tolerated without anesthesia and repeated as 
+      needed; annual assessment of vitamin D level and kidney function (blood urea 
+      nitrogen, serum creatinine, urinalysis, and urine microalbumin or urine 
+      protein-to-creatinine ratio); ophthalmologic evaluation annually beginning at age 
+      ten years. Because of the high frequency and severity of cardiopulmonary 
+      complications there should be a particularly low threshold to obtain an 
+      echocardiogram, pulmonary function tests, six-minute walk test, N-terminal 
+      pro-brain natriuretic peptide (NT-proBNP), and sleep study in individuals of any 
+      age with cardiac or pulmonary concerns; EKG in those on medications that may 
+      alter corrected QT interval; growth assessments throughout childhood; annual 
+      assessment of iron status and liver function; MRI as needed to evaluate for iron 
+      overload; assessment of mental health and social needs at least annually. 
+      Agents/circumstances to avoid: Dehydration, extremes of temperature, physical 
+      exhaustion, extremely high altitude, trauma, infection, recreational drugs with 
+      vasoconstrictive or cardiac stimulation effects, and meperidine. Evaluation of 
+      relatives at risk: Early diagnosis of at-risk family members allows for genetic 
+      counseling as well as education and intervention before symptoms or end-organ 
+      damage are present. Pregnancy management: Women with SCD who become pregnant 
+      require close follow up and monitoring by a hematologist and obstetrician. 
+      Increased risk for preterm labor, thrombosis, preeclampsia, infectious 
+      complications, ACS, and acute painful episodes have been reported during 
+      pregnancy. Hydroxyurea should be discontinued during pregnancy. GENETIC 
+      COUNSELING: SCD is inherited in an autosomal recessive manner. If both parents 
+      are known to be heterozygous for an HBB pathogenic variant, each sib of an 
+      affected individual has at conception a 25% chance of inheriting biallelic beta 
+      globin chain variants and being affected, a 50% chance of inheriting one beta 
+      globin chain variant and being heterozygous, and a 25% chance of inheriting 
+      neither of the familial beta globin chain variants. If the SCD-related HBB 
+      pathogenic variants in a family are known, molecular genetic testing can be used 
+      to identify which at-risk family members are heterozygous; if only one (or 
+      neither) SCD-related HBB pathogenic variant in a family is known, HPLC can be 
+      used to detect common qualitative abnormalities (i.e., abnormal hemoglobins). 
+      Molecular genetic prenatal testing and preimplantation genetic testing for SCD 
+      are possible when both HBB pathogenic variants have been identified in an 
+      affected family member and the genetic status of the parents is known.
+CI  - Copyright © 1993-2026, University of Washington, Seattle. GeneReviews is a 
+      registered trademark of the University of Washington, Seattle. All rights 
+      reserved. Test.
+FED - Adam, Margaret P
+ED  - Adam MP
+FED - Bick, Sarah
+ED  - Bick S
+FED - Mirzaa, Ghayda M
+ED  - Mirzaa GM
+FED - Pagon, Roberta A
+ED  - Pagon RA
+FED - Wallace, Stephanie E
+ED  - Wallace SE
+FED - Amemiya, Anne
+ED  - Amemiya A
+FAU - Bender, MA
+AU  - Bender MA
+AD  - Department of Pediatrics, University of Washington, Seattle, Washington
+FAU - Carlberg, Katie
+AU  - Carlberg K
+AD  - Department of Pediatrics, University of Washington, Seattle, Washington
+LA  - eng
+PT  - Review
+PT  - Book Chapter
+PL  - Seattle (WA)
+OTO - NLM
+OT  - Sickle Cell Disease Due to Hb S/S
+OT  - Sickle-Hemoglobin C Disease (Hb S/C)
+OT  - Sickle Beta-Thalassemia
+OT  - Hemoglobin subunit beta
+OT  - HBB
+OT  - Sickle Cell Disease
+EDAT- 2025/02/13 00:00
+CRDT- 2025/02/13 00:00
+AID - NBK1377 [bookaccession]

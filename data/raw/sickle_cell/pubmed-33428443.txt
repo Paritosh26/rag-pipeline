@@ -1,0 +1,62 @@
+PMID- 33428443
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210209
+LR  - 20230502
+IS  - 1539-3704 (Electronic)
+IS  - 0003-4819 (Linking)
+VI  - 174
+IP  - 1
+DP  - 2021 Jan
+TI  - Sickle Cell Disease.
+PG  - ITC1-ITC16
+LID - 10.7326/AITC202101190 [doi]
+AB  - Sickle cell disease is an umbrella term for a group of hemoglobinopathies 
+      characterized by the presence of 2 beta-globin gene mutations or deletions, at least 
+      1 of which is the point mutation that leads to the production of hemoglobin S. 
+      Sickle cell disease is associated with hemolytic anemia, significant chronic 
+      end-organ damage, and early death. In high-income countries, at least 95% of 
+      children with the disease survive into adulthood, resulting in a growing 
+      population of affected adults with significant comorbidities, complex medical 
+      issues, and not enough specialists to provide care. Hydroxyurea is the primary 
+      therapy, and recent advances in understanding disease pathophysiology have led to 
+      new therapies; progress in bone marrow transplant and gene editing has resulted 
+      in cure in some patients. The purpose of this review is to provide an overview of 
+      the diagnosis, common acute and chronic clinical manifestations, and best 
+      practices for management of sickle cell disease.
+FAU - Pecker, Lydia H
+AU  - Pecker LH
+AD  - Johns Hopkins University School of Medicine, Baltimore, Maryland (L.H.P., S.L.).
+FAU - Lanzkron, Sophie
+AU  - Lanzkron S
+AD  - Johns Hopkins University School of Medicine, Baltimore, Maryland (L.H.P., S.L.).
+LA  - eng
+GR  - K23 HL146841/HL/NHLBI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20210112
+PL  - United States
+TA  - Ann Intern Med
+JT  - Annals of internal medicine
+JID - 0372351
+RN  - 0 (Hemoglobin, Sickle)
+RN  - 9007-49-2 (DNA)
+SB  - IM
+MH  - Anemia, Sickle Cell/blood/*genetics
+MH  - DNA/*genetics
+MH  - DNA Mutational Analysis
+MH  - Genetic Testing/*methods
+MH  - Hemoglobin, Sickle/*genetics/metabolism
+MH  - Humans
+MH  - *Mutation
+EDAT- 2021/01/12 06:00
+MHDA- 2021/02/10 06:00
+CRDT- 2021/01/11 17:09
+PHST- 2021/01/12 06:00 [pubmed]
+PHST- 2021/02/10 06:00 [medline]
+PHST- 2021/01/11 17:09 [entrez]
+AID - 10.7326/AITC202101190 [doi]
+PST - ppublish
+SO  - Ann Intern Med. 2021 Jan;174(1):ITC1-ITC16. doi: 10.7326/AITC202101190. Epub 2021 
+      Jan 12.

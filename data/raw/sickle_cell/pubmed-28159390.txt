@@ -1,0 +1,88 @@
+PMID- 28159390
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20180116
+LR  - 20220408
+IS  - 1474-547X (Electronic)
+IS  - 0140-6736 (Linking)
+VI  - 390
+IP  - 10091
+DP  - 2017 Jul 15
+TI  - Sickle cell disease.
+PG  - 311-323
+LID - S0140-6736(17)30193-9 [pii]
+LID - 10.1016/S0140-6736(17)30193-9 [doi]
+AB  - Sickle cell disease is a common and life-threatening haematological disorder that 
+      affects millions of people worldwide. Abnormal sickle-shaped erythrocytes disrupt 
+      blood flow in small vessels, and this vaso-occlusion leads to distal tissue 
+      ischaemia and inflammation, with symptoms defining the acute painful sickle-cell 
+      crisis. Repeated sickling and ongoing haemolytic anaemia, even when subclinical, 
+      lead to parenchymal injury and chronic organ damage, causing substantial 
+      morbidity and early mortality. Currently available treatments are limited to 
+      transfusions and hydroxycarbamide, although stem cell transplantation might be a 
+      potentially curative therapy. Several new therapeutic options are in development, 
+      including gene therapy and gene editing. Recent advances include systematic 
+      universal screening for stroke risk, improved management of iron overload using 
+      oral chelators and non-invasive MRI measurements, and point-of-care diagnostic 
+      devices. Controversies include the role of haemolysis in sickle cell disease 
+      pathophysiology, optimal management of pregnancy, and strategies to prevent 
+      cerebrovascular disease.
+CI  - Copyright (c) 2017 Elsevier Ltd. All rights reserved.
+FAU - Ware, Russell E
+AU  - Ware RE
+AD  - Division of Hematology, Department of Pediatrics, Cincinnati Children's Hospital 
+      Medical Center, Cincinnati, OH, USA. Electronic address: russell.ware@cchmc.org.
+FAU - de Montalembert, Mariane
+AU  - de Montalembert M
+AD  - Department of Pediatrics, Hopital Necker, LABEX GR-Ex, Paris, France.
+FAU - Tshilolo, Leon
+AU  - Tshilolo L
+AD  - Centre Hospitalier Monkole, Kinshasa, Democratic Republic of Congo.
+FAU - Abboud, Miguel R
+AU  - Abboud MR
+AD  - Department of Pediatrics, American University of Beirut, Beirut, Lebanon.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20170201
+PL  - England
+TA  - Lancet
+JT  - Lancet (London, England)
+JID - 2985213R
+RN  - 0 (Antisickling Agents)
+RN  - X6Q56QN5QC (Hydroxyurea)
+SB  - IM
+MH  - Anemia, Sickle Cell/complications/diagnosis/*therapy
+MH  - Antisickling Agents/therapeutic use
+MH  - Blood Transfusion/methods
+MH  - Cerebrovascular Disorders/prevention & control
+MH  - Chronic Disease
+MH  - Early Diagnosis
+MH  - Female
+MH  - Genetic Therapy/methods
+MH  - Global Burden of Disease
+MH  - Hemolysis
+MH  - Hemolytic Plaque Technique
+MH  - Humans
+MH  - Hydroxyurea/therapeutic use
+MH  - Iron Overload/therapy
+MH  - Point-of-Care Systems
+MH  - Pregnancy
+MH  - Pregnancy Complications, Hematologic/prevention & control
+MH  - Stem Cell Transplantation/methods
+MH  - Stroke/etiology/prevention & control
+EDAT- 2017/02/06 06:00
+MHDA- 2018/01/18 06:00
+CRDT- 2017/02/05 06:00
+PHST- 2016/08/23 00:00 [received]
+PHST- 2016/11/11 00:00 [revised]
+PHST- 2016/11/18 00:00 [accepted]
+PHST- 2017/02/06 06:00 [pubmed]
+PHST- 2018/01/18 06:00 [medline]
+PHST- 2017/02/05 06:00 [entrez]
+AID - S0140-6736(17)30193-9 [pii]
+AID - 10.1016/S0140-6736(17)30193-9 [doi]
+PST - ppublish
+SO  - Lancet. 2017 Jul 15;390(10091):311-323. doi: 10.1016/S0140-6736(17)30193-9. Epub 
+      2017 Feb 1.

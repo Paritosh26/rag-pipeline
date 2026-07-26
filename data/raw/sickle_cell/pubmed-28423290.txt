@@ -1,0 +1,70 @@
+PMID- 28423290
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20170509
+LR  - 20230120
+IS  - 1533-4406 (Electronic)
+IS  - 0028-4793 (Linking)
+VI  - 376
+IP  - 16
+DP  - 2017 Apr 20
+TI  - Sickle Cell Disease.
+PG  - 1561-1573
+LID - 10.1056/NEJMra1510865 [doi]
+FAU - Piel, Frederic B
+AU  - Piel FB
+AD  - From the Department of Epidemiology and Biostatistics, Medical Research 
+      Council-Public Health England (MRC-PHE) Centre for Environment and Health, School 
+      of Public Health, Imperial College London (F.B.P.), and the Department of 
+      Haematological Medicine, King's College Hospital, King's College London (D.C.R.), 
+      London; and the Department of Medicine, Boston University School of Medicine, 
+      Boston (M.H.S.).
+FAU - Steinberg, Martin H
+AU  - Steinberg MH
+AD  - From the Department of Epidemiology and Biostatistics, Medical Research 
+      Council-Public Health England (MRC-PHE) Centre for Environment and Health, School 
+      of Public Health, Imperial College London (F.B.P.), and the Department of 
+      Haematological Medicine, King's College Hospital, King's College London (D.C.R.), 
+      London; and the Department of Medicine, Boston University School of Medicine, 
+      Boston (M.H.S.).
+FAU - Rees, David C
+AU  - Rees DC
+AD  - From the Department of Epidemiology and Biostatistics, Medical Research 
+      Council-Public Health England (MRC-PHE) Centre for Environment and Health, School 
+      of Public Health, Imperial College London (F.B.P.), and the Department of 
+      Haematological Medicine, King's College Hospital, King's College London (D.C.R.), 
+      London; and the Department of Medicine, Boston University School of Medicine, 
+      Boston (M.H.S.).
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - N Engl J Med
+JT  - The New England journal of medicine
+JID - 0255562
+RN  - 9034-63-3 (Fetal Hemoglobin)
+SB  - IM
+CIN - N Engl J Med. 2017 Jul 20;377(3):302-303. doi: 10.1056/NEJMc1706325. PMID: 
+      28723335
+CIN - N Engl J Med. 2017 Jul 20;377(3):303-304. doi: 10.1056/NEJMc1706325. PMID: 
+      28723336
+CIN - N Engl J Med. 2017 Jul 20;377(3):304. doi: 10.1056/NEJMc1706325. PMID: 28723337
+CIN - N Engl J Med. ;377(3):304. doi: 10.1056/NEJMc1706325. PMID: 28727407
+CIN - N Engl J Med. ;377(3):304-5. doi: 10.1056/NEJMc1706325. PMID: 28727408
+MH  - Air Pollution/adverse effects
+MH  - *Anemia, Sickle Cell/complications/epidemiology/genetics/therapy
+MH  - Fetal Hemoglobin/physiology
+MH  - Humans
+MH  - Infant, Newborn
+MH  - Infections/complications
+MH  - Phenotype
+MH  - alpha-Thalassemia/genetics
+EDAT- 2017/04/20 06:00
+MHDA- 2017/05/10 06:00
+CRDT- 2017/04/20 06:00
+PHST- 2017/04/20 06:00 [entrez]
+PHST- 2017/04/20 06:00 [pubmed]
+PHST- 2017/05/10 06:00 [medline]
+AID - 10.1056/NEJMra1510865 [doi]
+PST - ppublish
+SO  - N Engl J Med. 2017 Apr 20;376(16):1561-1573. doi: 10.1056/NEJMra1510865.

@@ -1,0 +1,108 @@
+PMID- 35788790
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20220706
+LR  - 20221118
+IS  - 1538-3598 (Electronic)
+IS  - 0098-7484 (Linking)
+VI  - 328
+IP  - 1
+DP  - 2022 Jul 5
+TI  - Sickle Cell Disease: A Review.
+PG  - 57-68
+LID - 10.1001/jama.2022.10233 [doi]
+AB  - IMPORTANCE: Sickle cell disease (SCD) is an inherited disorder of hemoglobin, 
+      characterized by formation of long chains of hemoglobin when deoxygenated within 
+      capillary beds, resulting in sickle-shaped red blood cells, progressive 
+      multiorgan damage, and increased mortality. An estimated 300 000 infants are born 
+      annually worldwide with SCD. Most individuals with SCD live in sub-Saharan 
+      Africa, India, the Mediterranean, and Middle East; approximately 100 000 
+      individuals with SCD live in the US. OBSERVATIONS: SCD is diagnosed through 
+      newborn screening programs, where available, or when patients present with 
+      unexplained severe atraumatic pain or normocytic anemia. In SCD, sickling and 
+      hemolysis of red blood cells result in vaso-occlusion with associated ischemia. 
+      SCD is characterized by repeated episodes of severe acute pain and acute chest 
+      syndrome, and by other complications including stroke, chronic pain, nephropathy, 
+      retinopathy, avascular necrosis, priapism, and leg ulcers. In the US, nearly all 
+      children with SCD survive to adulthood, but average life expectancy remains 20 
+      years less than the general population, with higher mortality as individuals 
+      transition from pediatric to adult-focused health care systems. Until 2017, 
+      hydroxyurea, which increases fetal hemoglobin and reduces red blood cell 
+      sickling, was the only disease-modifying therapy available for SCD and remains 
+      first-line therapy for most individuals with SCD. Three additional therapies, 
+      L-glutamine, crizanlizumab, and voxelotor, have been approved as adjunctive or 
+      second-line agents. In clinical trials, L-glutamine reduced hospitalization rates 
+      by 33% and mean length of stay from 11 to 7 days compared with placebo. 
+      Crizanlizumab reduced pain crises from 2.98 to 1.63 per year compared with 
+      placebo. Voxelotor increased hemoglobin by at least 1 g/dL, significantly more 
+      than placebo (51% vs 7%). Hematopoietic stem cell transplant is the only curative 
+      therapy, but it is limited by donor availability, with best results seen in 
+      children with a matched sibling donor. While SCD is characterized by acute and 
+      chronic pain, patients are not more likely to develop addiction to pain 
+      medications than the general population. CONCLUSIONS AND RELEVANCE: In the US, 
+      approximately 100 000 people have SCD, which is characterized by hemolytic 
+      anemia, acute and chronic pain, acute chest syndrome; increased incidence of 
+      stroke, nephropathy, and retinopathy; and a life span that is 20 years shorter 
+      than the general population. While hydroxyurea is first-line therapy for SCD, 
+      L-glutamine, crizanlizumab, and voxelotor have been approved in the US since 2017 
+      as adjunctive or second-line treatments, and hematopoietic stem cell transplant 
+      with a matched sibling donor is now standard care for severe disease.
+FAU - Kavanagh, Patricia L
+AU  - Kavanagh PL
+AD  - Division of General Pediatrics, Boston University School of Medicine, Boston 
+      Medical Center, Boston, Massachusetts.
+FAU - Fasipe, Titilope A
+AU  - Fasipe TA
+AD  - Division of Hematology-Oncology, Department of Pediatrics, Baylor College of 
+      Medicine and Texas Children's Hospital, Houston.
+FAU - Wun, Ted
+AU  - Wun T
+AD  - School of Medicine, Division of Hematology and Oncology, University of California 
+      Davis, Sacramento.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - United States
+TA  - JAMA
+JT  - JAMA
+JID - 7501160
+RN  - 0 (Antibodies, Monoclonal, Humanized)
+RN  - 0 (Antisickling Agents)
+RN  - 0 (Benzaldehydes)
+RN  - 0 (Hematologic Agents)
+RN  - 0 (Pyrazines)
+RN  - 0 (Pyrazoles)
+RN  - 0RH81L854J (Glutamine)
+RN  - 3ZO554A4Q8 (voxelotor)
+RN  - L7451S9126 (crizanlizumab)
+RN  - X6Q56QN5QC (Hydroxyurea)
+SB  - IM
+CIN - JAMA. 2022 Nov 15;328(19):1979. doi: 10.1001/jama.2022.16732. PMID: 36378213
+MH  - Adult
+MH  - *Anemia, Sickle Cell/complications/diagnosis/therapy
+MH  - Antibodies, Monoclonal, Humanized/therapeutic use
+MH  - Antisickling Agents/therapeutic use
+MH  - Benzaldehydes/therapeutic use
+MH  - Child
+MH  - Glutamine/therapeutic use
+MH  - Hematologic Agents/therapeutic use
+MH  - Hematopoietic Stem Cell Transplantation
+MH  - Humans
+MH  - Hydroxyurea/therapeutic use
+MH  - Infant, Newborn
+MH  - Neonatal Screening
+MH  - Pain/drug therapy/etiology
+MH  - Pyrazines/therapeutic use
+MH  - Pyrazoles/therapeutic use
+MH  - Transition to Adult Care
+MH  - United States/epidemiology
+EDAT- 2022/07/06 06:00
+MHDA- 2022/07/07 06:00
+CRDT- 2022/07/05 18:48
+PHST- 2022/07/05 18:48 [entrez]
+PHST- 2022/07/06 06:00 [pubmed]
+PHST- 2022/07/07 06:00 [medline]
+AID - 2793821 [pii]
+AID - 10.1001/jama.2022.10233 [doi]
+PST - ppublish
+SO  - JAMA. 2022 Jul 5;328(1):57-68. doi: 10.1001/jama.2022.10233.

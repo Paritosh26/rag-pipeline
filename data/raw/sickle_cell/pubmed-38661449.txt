@@ -1,0 +1,991 @@
+PMID- 38661449
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20240508
+LR  - 20260518
+IS  - 1533-4406 (Electronic)
+IS  - 0028-4793 (Linking)
+VI  - 390
+IP  - 18
+DP  - 2024 May 9
+TI  - Exagamglogene Autotemcel for Severe Sickle Cell Disease.
+PG  - 1649-1662
+LID - 10.1056/NEJMoa2309676 [doi]
+AB  - BACKGROUND: Exagamglogene autotemcel (exa-cel) is a nonviral cell therapy 
+      designed to reactivate fetal hemoglobin synthesis by means of ex vivo clustered 
+      regularly interspaced short palindromic repeats (CRISPR)-Cas9 gene editing of 
+      autologous CD34+ hematopoietic stem and progenitor cells (HSPCs) at the 
+      erythroid-specific enhancer region of BCL11A. METHODS: We conducted a phase 3, 
+      single-group, open-label study of exa-cel in patients 12 to 35 years of age with 
+      sickle cell disease who had had at least two severe vaso-occlusive crises in each 
+      of the 2 years before screening. CD34+ HSPCs were edited with the use of 
+      CRISPR-Cas9. Before the exa-cel infusion, patients underwent myeloablative 
+      conditioning with pharmacokinetically dose-adjusted busulfan. The primary end 
+      point was freedom from severe vaso-occlusive crises for at least 12 consecutive 
+      months. A key secondary end point was freedom from inpatient hospitalization for 
+      severe vaso-occlusive crises for at least 12 consecutive months. The safety of 
+      exa-cel was also assessed. RESULTS: A total of 44 patients received exa-cel, and 
+      the median follow-up was 19.3 months (range, 0.8 to 48.1). Neutrophils and 
+      platelets engrafted in each patient. Of the 30 patients who had sufficient 
+      follow-up to be evaluated, 29 (97%; 95% confidence interval [CI], 83 to 100) were 
+      free from vaso-occlusive crises for at least 12 consecutive months, and all 30 
+      (100%; 95% CI, 88 to 100) were free from hospitalizations for vaso-occlusive 
+      crises for at least 12 consecutive months (P<0.001 for both comparisons against 
+      the null hypothesis of a 50% response). The safety profile of exa-cel was 
+      generally consistent with that of myeloablative busulfan conditioning and 
+      autologous HSPC transplantation. No cancers occurred. CONCLUSIONS: Treatment with 
+      exa-cel eliminated vaso-occlusive crises in 97% of patients with sickle cell 
+      disease for a period of 12 months or more. (CLIMB SCD-121; ClinicalTrials.gov 
+      number, NCT03745287.).
+CI  - Copyright (c) 2024 Massachusetts Medical Society.
+FAU - Frangoul, Haydar
+AU  - Frangoul H
+AUID- ORCID: 0000-0002-0590-2826
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Locatelli, Franco
+AU  - Locatelli F
+AUID- ORCID: 0000-0002-7976-3654
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Sharma, Akshay
+AU  - Sharma A
+AUID- ORCID: 0000-0003-3281-2081
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Bhatia, Monica
+AU  - Bhatia M
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Mapara, Markus
+AU  - Mapara M
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Molinari, Lyndsay
+AU  - Molinari L
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Wall, Donna
+AU  - Wall D
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Liem, Robert I
+AU  - Liem RI
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Telfer, Paul
+AU  - Telfer P
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Shah, Ami J
+AU  - Shah AJ
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Cavazzana, Marina
+AU  - Cavazzana M
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Corbacioglu, Selim
+AU  - Corbacioglu S
+AUID- ORCID: 0000-0003-1070-8486
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Rondelli, Damiano
+AU  - Rondelli D
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Meisel, Roland
+AU  - Meisel R
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Dedeken, Laurence
+AU  - Dedeken L
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Lobitz, Stephan
+AU  - Lobitz S
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - de Montalembert, Mariane
+AU  - de Montalembert M
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Steinberg, Martin H
+AU  - Steinberg MH
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Walters, Mark C
+AU  - Walters MC
+AUID- ORCID: 0000-0002-6515-4559
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Eckrich, Michael J
+AU  - Eckrich MJ
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Imren, Suzan
+AU  - Imren S
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Bower, Laura
+AU  - Bower L
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Simard, Christopher
+AU  - Simard C
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Zhou, Weiyu
+AU  - Zhou W
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Xuan, Fengjuan
+AU  - Xuan F
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Morrow, Phuong Khanh
+AU  - Morrow PK
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Hobbs, William E
+AU  - Hobbs WE
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+FAU - Grupp, Stephan A
+AU  - Grupp SA
+AD  - From Sarah Cannon Research Institute at the Children's Hospital at TriStar 
+      Centennial (H.F.), Nashville, and Bone Marrow Transplantation and Cellular 
+      Therapy, St. Jude Children's Research Hospital, Memphis (A.S.) - both in 
+      Tennessee; IRCCS, Ospedale Pediatrico Bambino Gesu, Catholic University of the 
+      Sacred Heart, Rome (F.L.); the Department of Pediatrics, Columbia University 
+      Irving Medical Center, New York-Presbyterian-Morgan Stanley Children's Hospital 
+      (M.B.), and the Department of Medicine, Division of Hematology-Oncology, Columbia 
+      University (M. Mapara) - both in New York; Sarah Cannon Pediatric Transplant and 
+      Cellular Therapy Program at Methodist Children's Hospital, San Antonio, TX (L.M., 
+      M.J.E.); the Hospital for Sick Children and the University of Toronto, Toronto 
+      (D.W.); Ann and Robert H. Lurie Children's Hospital of Chicago (R.I.L.) and the 
+      University of Illinois at Chicago (D.R.) - both in Chicago; Royal London 
+      Hospital, Barts Health NHS Trust, London (P.T.); Stanford University, Palo Alto 
+      (A.J.S.), and University of California San Francisco Benioff Children's Hospital, 
+      Oakland (M.C.W.) - both in California; the Biotherapy Department and Biotherapy 
+      Clinical Investigation Center (M.C.), Necker-Enfants Malades Hospital, Assistance 
+      Publique-Hopitaux de Paris, Universite Paris-Cite (M. de Montalembert), Paris; 
+      the University of Regensburg, Regensburg (S.C.), the Division of Pediatric Stem 
+      Cell Therapy, Department of Pediatric Oncology, Hematology, and Clinical 
+      Immunology, Medical Faculty, Heinrich Heine University, Duesseldorf (R.M.), and 
+      Gemeinschaftsklinikum Mittelrhein, Koblenz (S.L.) - all in Germany; Hopital 
+      Universitaire des Enfants Reine Fabiola, Universite Libre de Bruxelles, Brussels 
+      (L.D.); Boston University Chobanian and Avedisian School of Medicine (M.H.S.) and 
+      Vertex Pharmaceuticals (S.I., L.B., C.S., W.Z., F.X., W.E.H.), Boston, and CRISPR 
+      Therapeutics, Cambridge (P.K.M.) - all in Massachusetts; and the Division of 
+      Oncology, Children's Hospital of Philadelphia, Perelman School of Medicine at the 
+      University of Pennsylvania, Philadelphia (S.A.G.).
+CN  - CLIMB SCD-121 Study Group
+LA  - eng
+SI  - ClinicalTrials.gov/NCT03745287
+PT  - Clinical Trial, Phase III
+PT  - Journal Article
+PT  - Multicenter Study
+DEP - 20240424
+PL  - United States
+TA  - N Engl J Med
+JT  - The New England journal of medicine
+JID - 0255562
+RN  - 0 (Antigens, CD34)
+RN  - G1LN9045DK (Busulfan)
+RN  - 9034-63-3 (Fetal Hemoglobin)
+RN  - 0 (Repressor Proteins)
+RN  - 0 (Myeloablative Agonists)
+RN  - 0 (BCL11A protein, human)
+SB  - IM
+CIN - N Engl J Med. 2024 Aug 8;391(6):571-572. doi: 10.1056/NEJMc2407381. PMID: 
+      39115070
+CIN - N Engl J Med. 2024 Aug 8;391(6):572. doi: 10.1056/NEJMc2407381. PMID: 39115071
+MH  - Adolescent
+MH  - Adult
+MH  - Child
+MH  - Female
+MH  - Humans
+MH  - Male
+MH  - Young Adult
+MH  - *Anemia, Sickle Cell/complications/genetics/therapy
+MH  - Antigens, CD34
+MH  - Busulfan/therapeutic use
+MH  - CRISPR-Cas Systems
+MH  - *Fetal Hemoglobin/biosynthesis/genetics
+MH  - Gene Editing
+MH  - *Hematopoietic Stem Cell Transplantation
+MH  - Hematopoietic Stem Cells
+MH  - Repressor Proteins
+MH  - Transplantation Conditioning
+MH  - Cell- and Tissue-Based Therapy/methods
+MH  - Myeloablative Agonists/therapeutic use
+MH  - Europe
+MH  - North America
+FIR - Molinari, Lyndsay
+IR  - Molinari L
+FIR - Herrera, Christian
+IR  - Herrera C
+FIR - Rondelli, Damiano
+IR  - Rondelli D
+FIR - Krauz, Lani
+IR  - Krauz L
+FIR - Dedeken, Laurence
+IR  - Dedeken L
+FIR - Van Puyvelde, Merry
+IR  - Van Puyvelde M
+FIR - Mapara, Markus
+IR  - Mapara M
+FIR - Shelton, Elizabeth
+IR  - Shelton E
+FIR - Bhatia, Monica
+IR  - Bhatia M
+FIR - Brivett, Chez
+IR  - Brivett C
+FIR - Frangoul, Haydar
+IR  - Frangoul H
+FIR - Riggins, Christy
+IR  - Riggins C
+FIR - Sharma, Akshay
+IR  - Sharma A
+FIR - Hildebrand, Rachel
+IR  - Hildebrand R
+FIR - Shah, Ami
+IR  - Shah A
+FIR - Bartolome, Roxanne
+IR  - Bartolome R
+FIR - Grupp, Stephan
+IR  - Grupp S
+FIR - Gallagher, Denise
+IR  - Gallagher D
+FIR - Cavazzana, Marina
+IR  - Cavazzana M
+FIR - Marouene, Jouda
+IR  - Marouene J
+FIR - Liem, Robert
+IR  - Liem R
+FIR - King, Kathryn
+IR  - King K
+FIR - Telfer, Paul
+IR  - Telfer P
+FIR - Dobson, Kashia
+IR  - Dobson K
+FIR - Corbacioglu, Selim
+IR  - Corbacioglu S
+FIR - Spachtholz, Rainer
+IR  - Spachtholz R
+FIR - Locatelli, Franco
+IR  - Locatelli F
+FIR - Algeri, Mattia
+IR  - Algeri M
+FIR - Cefalo, Maria Giuseppina
+IR  - Cefalo MG
+FIR - Laurieri, Caterina
+IR  - Laurieri C
+FIR - de la Fuente, Josu
+IR  - de la Fuente J
+FIR - Gururaj, Janet
+IR  - Gururaj J
+FIR - Wall, Donna
+IR  - Wall D
+FIR - Moon, Jenny
+IR  - Moon J
+FIR - Meisel, Roland
+IR  - Meisel R
+FIR - Schiefer, Sandra
+IR  - Schiefer S
+FIR - de Montalembert, Mariane
+IR  - de Montalembert M
+FIR - Grupp, Stephan A
+IR  - Grupp SA
+FIR - Lobitz, Stephan
+IR  - Lobitz S
+FIR - Steinberg, Martin H
+IR  - Steinberg MH
+FIR - Walters, Mark C
+IR  - Walters MC
+EDAT- 2024/04/25 12:49
+MHDA- 2024/05/08 18:51
+CRDT- 2024/04/25 09:24
+PHST- 2024/05/08 18:51 [medline]
+PHST- 2024/04/25 12:49 [pubmed]
+PHST- 2024/04/25 09:24 [entrez]
+AID - 10.1056/NEJMoa2309676 [doi]
+PST - ppublish
+SO  - N Engl J Med. 2024 May 9;390(18):1649-1662. doi: 10.1056/NEJMoa2309676. Epub 2024 
+      Apr 24.

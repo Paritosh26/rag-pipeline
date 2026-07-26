@@ -1,0 +1,109 @@
+PMID- 30332562
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20200420
+LR  - 20200420
+IS  - 1553-4014 (Electronic)
+IS  - 1553-4006 (Print)
+IS  - 1553-4006 (Linking)
+VI  - 14
+DP  - 2019 Jan 24
+TI  - Pathophysiology of Sickle Cell Disease.
+PG  - 263-292
+LID - 10.1146/annurev-pathmechdis-012418-012838 [doi]
+AB  - Since the discovery of sickle cell disease (SCD) in 1910, enormous strides have 
+      been made in the elucidation of the pathogenesis of its protean complications, 
+      which has inspired recent advances in targeted molecular therapies. In SCD, a 
+      single amino acid substitution in the beta-globin chain leads to polymerization of 
+      mutant hemoglobin S, impairing erythrocyte rheology and survival. Clinically, 
+      erythrocyte abnormalities in SCD manifest in hemolytic anemia and cycles of 
+      microvascular vaso-occlusion leading to end-organ ischemia-reperfusion injury and 
+      infarction. Vaso-occlusive events and intravascular hemolysis promote 
+      inflammation and redox instability that lead to progressive small- and 
+      large-vessel vasculopathy. Based on current evidence, the pathobiology of SCD is 
+      considered to be a vicious cycle of four major processes, all the subject of 
+      active study and novel therapeutic targeting: ( a) hemoglobin S polymerization, ( 
+      b) impaired biorheology and increased adhesion-mediated vaso-occlusion, ( c) 
+      hemolysis-mediated endothelial dysfunction, and ( d) concerted activation of 
+      sterile inflammation (Toll-like receptor 4- and inflammasome-dependent innate 
+      immune pathways). These molecular, cellular, and biophysical processes synergize 
+      to promote acute and chronic pain and end-organ injury and failure in SCD. This 
+      review provides an exhaustive overview of the current understanding of the 
+      molecular pathophysiology of SCD, how this pathophysiology contributes to 
+      complications of the central nervous and cardiopulmonary systems, and how this 
+      knowledge is being harnessed to develop current and potential therapies.
+FAU - Sundd, Prithu
+AU  - Sundd P
+AD  - Division of Pulmonary, Allergy and Critical Care Medicine, University of 
+      Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA; email: 
+      prs51@pitt.edu.
+AD  - Pittsburgh Heart, Lung and Blood Vascular Medicine Institute, University of 
+      Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA.
+AD  - Sickle Cell Center of Excellence, University of Pittsburgh School of Medicine, 
+      Pittsburgh, Pennsylvania 15261, USA.
+FAU - Gladwin, Mark T
+AU  - Gladwin MT
+AD  - Division of Pulmonary, Allergy and Critical Care Medicine, University of 
+      Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA; email: 
+      prs51@pitt.edu.
+AD  - Pittsburgh Heart, Lung and Blood Vascular Medicine Institute, University of 
+      Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA.
+AD  - Sickle Cell Center of Excellence, University of Pittsburgh School of Medicine, 
+      Pittsburgh, Pennsylvania 15261, USA.
+FAU - Novelli, Enrico M
+AU  - Novelli EM
+AD  - Pittsburgh Heart, Lung and Blood Vascular Medicine Institute, University of 
+      Pittsburgh School of Medicine, Pittsburgh, Pennsylvania 15261, USA.
+AD  - Sickle Cell Center of Excellence, University of Pittsburgh School of Medicine, 
+      Pittsburgh, Pennsylvania 15261, USA.
+AD  - Division of Hematology/Oncology, University of Pittsburgh School of Medicine, 
+      Pittsburgh, Pennsylvania 15261, USA.
+LA  - eng
+GR  - P01 HL103455/HL/NHLBI NIH HHS/United States
+GR  - K23 HL112848/HL/NHLBI NIH HHS/United States
+GR  - R01 HL128297/HL/NHLBI NIH HHS/United States
+GR  - R01 HL098032/HL/NHLBI NIH HHS/United States
+GR  - R01 HL125886/HL/NHLBI NIH HHS/United States
+GR  - T32 HL110849/HL/NHLBI NIH HHS/United States
+GR  - R01 HL127107/HL/NHLBI NIH HHS/United States
+GR  - R01 HL141080/HL/NHLBI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20181017
+PL  - United States
+TA  - Annu Rev Pathol
+JT  - Annual review of pathology
+JID - 101275111
+RN  - 0 (TLR4 protein, human)
+RN  - 0 (Toll-Like Receptor 4)
+SB  - IM
+MH  - Anemia, Sickle Cell/complications/metabolism/*physiopathology
+MH  - *Hemolysis
+MH  - Humans
+MH  - *Inflammation
+MH  - *Oxidative Stress
+MH  - Reperfusion Injury/*etiology
+MH  - Toll-Like Receptor 4
+PMC - PMC7053558
+MID - NIHMS1562670
+OTO - NOTNLM
+OT  - hemolysis
+OT  - infarction
+OT  - inflammation
+OT  - oxidative stress
+OT  - reperfusion injury
+OT  - sickle cell anemia
+EDAT- 2018/10/18 06:00
+MHDA- 2020/04/21 06:00
+PMCR- 2020/03/03
+CRDT- 2018/10/18 06:00
+PHST- 2018/10/18 06:00 [pubmed]
+PHST- 2020/04/21 06:00 [medline]
+PHST- 2018/10/18 06:00 [entrez]
+PHST- 2020/03/03 00:00 [pmc-release]
+AID - 10.1146/annurev-pathmechdis-012418-012838 [doi]
+PST - ppublish
+SO  - Annu Rev Pathol. 2019 Jan 24;14:263-292. doi: 
+      10.1146/annurev-pathmechdis-012418-012838. Epub 2018 Oct 17.

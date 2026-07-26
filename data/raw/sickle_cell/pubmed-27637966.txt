@@ -1,0 +1,64 @@
+PMID- 27637966
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20170323
+LR  - 20220408
+IS  - 0072-9752 (Print)
+IS  - 0072-9752 (Linking)
+VI  - 138
+DP  - 2016
+TI  - Sickle cell disease.
+PG  - 311-24
+LID - B978-0-12-802973-2.00018-5 [pii]
+LID - 10.1016/B978-0-12-802973-2.00018-5 [doi]
+AB  - Sickle cell disease (SCD) is an inherited hemoglobinopathy caused by a mutation 
+      in the sixth amino acid of the beta-globin gene (HBB). It is the most common serious 
+      genetic diseases in childhood, affecting approximately 1 in 2500 births and 100 
+      000 individuals in the USA, in addition to 300 000 new cases globally each year. 
+      Central nervous system injury is the most debilitating frequent complication of 
+      SCD and includes stroke, silent cerebral infarct (SCI), and cognitive impairment. 
+      Among children with sickle cell anemia (HbSS), 11% had a stroke by age 18 years 
+      before the implementation of transcranial Doppler screening. SCI is identified in 
+      27% of children with HbSS by their 5th birthday. Children who develop SCI have 
+      greater cognitive impairment compared with either children with HbSS without SCI 
+      or siblings without SCD. A recent study of adults demonstrated significant 
+      cognitive dysfunction, even in participants with apparently mild SCD.
+CI  - (c) 2016 Elsevier B.V. All rights reserved.
+FAU - Strouse, J
+AU  - Strouse J
+AD  - Division of Hematology, Department of Medicine and Division of Pediatric 
+      Hematology/Oncology, Department of Pediatrics, Duke University, Durham, NC, USA. 
+      Electronic address: john.strouse@duke.edu.
+LA  - eng
+PT  - Journal Article
+PT  - Review
+PL  - Netherlands
+TA  - Handb Clin Neurol
+JT  - Handbook of clinical neurology
+JID - 0166161
+SB  - IM
+MH  - Adolescent
+MH  - Anemia, Sickle Cell/*complications/*epidemiology
+MH  - Cerebral Infarction/epidemiology/etiology
+MH  - Child
+MH  - Child, Preschool
+MH  - Cognition Disorders/epidemiology/etiology
+MH  - Humans
+MH  - Stroke/epidemiology/etiology
+OTO - NOTNLM
+OT  - cognitive impairment
+OT  - hemorrhagic stroke
+OT  - ischemic stroke
+OT  - sickle cell anemia
+OT  - sickle cell disease
+OT  - silent cerebral infarct
+EDAT- 2016/09/18 06:00
+MHDA- 2017/03/24 06:00
+CRDT- 2016/09/18 06:00
+PHST- 2016/09/18 06:00 [entrez]
+PHST- 2016/09/18 06:00 [pubmed]
+PHST- 2017/03/24 06:00 [medline]
+AID - B978-0-12-802973-2.00018-5 [pii]
+AID - 10.1016/B978-0-12-802973-2.00018-5 [doi]
+PST - ppublish
+SO  - Handb Clin Neurol. 2016;138:311-24. doi: 10.1016/B978-0-12-802973-2.00018-5.

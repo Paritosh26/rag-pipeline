@@ -1,0 +1,29 @@
+# One disease collection per top-level key. To add a new disease: add a block
+# here and ingest documents into data/raw/<key>/ via /ingest-folder -- no code
+# or schema change needed. Collection name comes from the key itself, not a
+# field inside the block, so it can never drift out of sync.
+
+sickle_cell:
+  chunk_size: 600
+  chunk_overlap: 120
+  retrieval_top_k: 5
+
+wilson:
+  chunk_size: 600
+  chunk_overlap: 120
+  retrieval_top_k: 5
+
+huntington:
+  chunk_size: 600
+  chunk_overlap: 120
+  retrieval_top_k: 5
+
+cancer:
+  chunk_size: 700
+  chunk_overlap: 120
+  retrieval_top_k: 6
+
+diabetes:
+  chunk_size: 700
+  chunk_overlap: 120
+  retrieval_top_k: 6
