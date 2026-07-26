@@ -95,3 +95,6 @@ an indexed `collection` column, so adding a disease never touches the database s
 ```bash
 pytest
 ```
+
+
+https://paritoshdutta26.atlassian.net/wiki/spaces/PH/pages/1081358/Biomedical+Research+RAG+Platform+Architecture+Summary
