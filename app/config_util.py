@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import os
 from pathlib import Path
 from typing import Any
@@ -9,6 +10,8 @@ from dotenv import load_dotenv
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 
 class Settings(BaseSettings):
@@ -74,7 +77,12 @@ class Settings(BaseSettings):
         base_path = Path(path or config_root / 'application.yaml')
 
         merged: dict[str, Any] = {}
-        if base_path.exists():
+        if not base_path.exists():
+            logger.warning(
+                'Config file %s not found; falling back to the last-resort Python defaults in Settings.',
+                base_path,
+            )
+        else:
             with base_path.open('r', encoding='utf-8') as handle:
                 document: dict[str, Any] = yaml.safe_load(handle) or {}
             merged = dict(document.get('default') or {})

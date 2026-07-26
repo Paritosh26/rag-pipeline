@@ -3,6 +3,8 @@ from __future__ import annotations
 import logging
 from dataclasses import dataclass
 
+from sqlalchemy.exc import ArgumentError, SQLAlchemyError
+
 from app.application.services.answer_service import AnswerService
 from app.application.services.chunking_service import ChunkingService
 from app.application.services.ingestion_service import IngestionService
@@ -59,7 +61,13 @@ def build_services(collection_name: str | None = None) -> ServiceContainer:
             pool_pre_ping=settings.database_pool_pre_ping,
         )
         vector_store.initialize()
-    except Exception:
+    except ArgumentError:
+        logger.error(
+            'Invalid database_url %r; fix the configuration rather than relying on the in-memory fallback.',
+            settings.database_url,
+        )
+        raise
+    except SQLAlchemyError:
         logger.warning(
             'Could not connect to Postgres at %s; falling back to a non-persistent in-memory vector store.',
             settings.database_url,

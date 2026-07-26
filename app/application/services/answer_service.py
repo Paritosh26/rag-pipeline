@@ -31,6 +31,7 @@ class AnswerService:
         below_threshold = top_score < self.settings.retrieval_score_threshold
 
         answer_text = None
+        llm_error: str | None = None
         if below_threshold:
             logger.info(
                 'Top retrieval score %.3f below retrieval_score_threshold %.3f; skipping LLM call for question %r',
@@ -40,11 +41,13 @@ class AnswerService:
             try:
                 answer_text = self.llm_provider.generate(prompt)
                 logger.info('Generated answer via %s for question %r', type(self.llm_provider).__name__, question)
-            except Exception:
+            except Exception as exc:
+                llm_error = f'{type(exc).__name__}: {exc}'
                 logger.exception('LLM generation failed; falling back to extractive answer')
         else:
             logger.info('No LLM provider configured; using extractive fallback for question %r', question)
 
+        degraded = answer_text is None
         if answer_text is None:
             answer_text = (
                 'Based on the retrieved context, I can summarize that the most relevant evidence '
@@ -53,6 +56,7 @@ class AnswerService:
 
         return {
             'answer': answer_text,
+            'answer_source': 'extractive' if degraded else 'llm',
             'citations': [
                 {
                     'source_id': chunk.source_id,
@@ -66,5 +70,8 @@ class AnswerService:
                 'question': question,
                 'collection': self.settings.collection_name,
                 'retrieved_chunk_count': len(chunks),
+                # Surfaced so callers can tell a real LLM answer from a
+                # degraded extractive one instead of only seeing it in logs.
+                'llm_error': llm_error,
             },
         }
