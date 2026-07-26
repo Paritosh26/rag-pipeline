@@ -23,7 +23,6 @@ class IncrementalProcessingService:
         file_path = Path(path)
         current_checksum = self.compute_checksum(file_path)
         previous_checksum = self._checksums.get(str(file_path))
-        self._checksums[str(file_path)] = current_checksum
         return previous_checksum is not None and previous_checksum == checksum and checksum == current_checksum
 
     def mark_processed(self, path: str | Path, checksum: str) -> None:
