@@ -4,9 +4,10 @@ import os
 from pathlib import Path
 from typing import Any
 
-import yaml
 from dotenv import load_dotenv
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+from app.utils.yaml_io import load_yaml_mapping
 
 load_dotenv()
 
@@ -73,20 +74,14 @@ class Settings(BaseSettings):
         config_root = Path(config_dir or project_root / 'configs')
         base_path = Path(path or config_root / 'application.yaml')
 
-        merged: dict[str, Any] = {}
-        if base_path.exists():
-            with base_path.open('r', encoding='utf-8') as handle:
-                document: dict[str, Any] = yaml.safe_load(handle) or {}
-            merged = dict(document.get('default') or {})
-            environment_key = os.getenv('APP_ENV', 'local')
-            merged.update(document.get('environments', {}).get(environment_key) or {})
+        document = load_yaml_mapping(base_path)
+        merged: dict[str, Any] = dict(document.get('default') or {})
+        environment_key = os.getenv('APP_ENV', 'local')
+        merged.update((document.get('environments') or {}).get(environment_key) or {})
 
         collection_key = collection_name or merged.get('collection_name') or 'default'
-        collections_path = config_root / 'collections.yaml'
-        if collections_path.exists():
-            with collections_path.open('r', encoding='utf-8') as handle:
-                all_collections: dict[str, Any] = yaml.safe_load(handle) or {}
-            merged.update(all_collections.get(collection_key) or {})
+        all_collections = load_yaml_mapping(config_root / 'collections.yaml')
+        merged.update(all_collections.get(collection_key) or {})
         merged['collection_name'] = collection_key
 
         for key, value in merged.items():

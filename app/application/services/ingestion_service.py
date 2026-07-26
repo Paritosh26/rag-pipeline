@@ -45,7 +45,7 @@ class IngestionService:
         self.vector_store.initialize()
         file_path = Path(path)
         text = self.extraction_service.extract_text_from_path(file_path)
-        document = Document(source_id=file_path.stem, title=file_path.stem, content=text, metadata={'path': str(file_path)})
+        document = Document.from_path(file_path, content=text, metadata={'path': str(file_path)})
         self._embed_and_store(document)
         return document
 
@@ -69,32 +69,26 @@ class IngestionService:
         checksum = self.incremental_processing.compute_checksum(file_path)
         if self.incremental_processing.should_skip(file_path, checksum):
             logger.info('Skipping unchanged document %s (checksum match)', file_path.stem)
-            for stage in ('bronze', 'silver', 'gold'):
-                self.status.mark_completed(file_path.stem, stage)
-            return Document(source_id=file_path.stem, title=file_path.stem, content='', metadata={'skipped': True, 'checksum': checksum})
+            self.status.mark_all_completed(file_path.stem)
+            return Document.from_path(file_path, content='', metadata={'skipped': True, 'checksum': checksum})
 
-        self.status.mark_started(file_path.stem, 'bronze')
-        text = self.extraction_service.extract_text_from_path(file_path)
-        if len(text) < self.min_document_length:
-            raise ValueError(f'Document too short for ingestion: {file_path}')
-        self.status.mark_completed(file_path.stem, 'bronze')
+        with self.status.track(file_path.stem, 'bronze'):
+            text = self.extraction_service.extract_text_from_path(file_path)
+            if len(text) < self.min_document_length:
+                raise ValueError(f'Document too short for ingestion: {file_path}')
 
-        self.status.mark_started(file_path.stem, 'silver')
-        metadata = self.extraction_service.extract_metadata(file_path, text)
-        metadata['collection'] = collection_name
-        metadata['cleaned_length'] = len(text)
-        self.status.mark_completed(file_path.stem, 'silver')
+        with self.status.track(file_path.stem, 'silver'):
+            metadata = self.extraction_service.extract_metadata(file_path, text)
+            metadata['collection'] = collection_name
+            metadata['cleaned_length'] = len(text)
 
-        document = Document(source_id=file_path.stem, title=metadata.get('title') or file_path.stem, content=text, metadata=metadata)
+        document = Document.from_path(file_path, content=text, metadata=metadata, title=metadata.get('title'))
         self.incremental_processing.mark_processed(file_path, checksum)
 
-        self.status.mark_started(file_path.stem, 'gold')
-        self._embed_and_store(document)
-        self.status.mark_completed(file_path.stem, 'gold')
+        with self.status.track(file_path.stem, 'gold'):
+            self._embed_and_store(document)
 
-        document.metadata['bronze_status'] = self.status.get_status(document.source_id).get('bronze')
-        document.metadata['silver_status'] = self.status.get_status(document.source_id).get('silver')
-        document.metadata['gold_status'] = self.status.get_status(document.source_id).get('gold')
+        document.metadata.update(self.status.stage_statuses(document.source_id))
         logger.info('Processed document %s through bronze/silver/gold (collection=%s)', document.source_id, collection_name)
         return document
 

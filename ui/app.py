@@ -14,6 +14,14 @@ import yaml
 
 COLLECTIONS_PATH = Path(__file__).resolve().parents[1] / 'configs' / 'collections.yaml'
 
+
+def post_json(base_url: str, endpoint: str, payload: dict, timeout: int) -> dict:
+    """POST a JSON payload to the API and return the decoded response."""
+    response = requests.post(f'{base_url}{endpoint}', json=payload, timeout=timeout)
+    response.raise_for_status()
+    return response.json()
+
+
 st.set_page_config(page_title='Biomedical RAG', page_icon='🧬', layout='centered')
 st.title('🧬 Biomedical RAG')
 
@@ -47,13 +55,13 @@ with st.sidebar:
     folder_path = st.text_input('Folder path', value=f'data/raw/{collection}')
     if st.button('Ingest folder'):
         try:
-            response = requests.post(
-                f'{base_url}/ingest-folder',
-                json={'folder_path': folder_path, 'collection': collection},
+            result = post_json(
+                base_url,
+                '/ingest-folder',
+                {'folder_path': folder_path, 'collection': collection},
                 timeout=120,
             )
-            response.raise_for_status()
-            st.success(response.json())
+            st.success(result)
         except requests.exceptions.RequestException as exc:
             st.error(f'Ingestion failed: {exc}')
 
@@ -62,13 +70,12 @@ question = st.text_area('Question', placeholder='What are the main clinical comp
 
 if st.button('Ask', type='primary') and question.strip():
     try:
-        response = requests.post(
-            f'{st.session_state.base_url}/query',
-            json={'question': question, 'collection': collection},
+        payload = post_json(
+            st.session_state.base_url,
+            '/query',
+            {'question': question, 'collection': collection},
             timeout=60,
         )
-        response.raise_for_status()
-        payload = response.json()
     except requests.exceptions.RequestException as exc:
         st.error(f'Query failed: {exc}')
     else:

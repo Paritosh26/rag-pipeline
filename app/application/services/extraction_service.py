@@ -95,10 +95,10 @@ class ExtractionService:
         return match.group(1).strip() if match else None
 
     def _split_list(self, pattern: re.Pattern[str], text: str) -> list[str]:
-        match = pattern.search(text)
-        if not match:
+        value = self._find_first_match(pattern, text)
+        if not value:
             return []
-        return [item.strip() for item in match.group(1).split(',') if item.strip()]
+        return [item.strip() for item in value.split(',') if item.strip()]
 
     def _extract_year(self, text: str) -> int | None:
         matches = self._YEAR_PATTERN.findall(text)

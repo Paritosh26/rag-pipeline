@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import logging
 import time
+from collections.abc import Iterator
+from contextlib import contextmanager
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 from typing import Any
@@ -59,24 +61,32 @@ app_state: dict[str, Any] = {
 }
 
 
-class IndexRequest(BaseModel):
-    path: str
+class CollectionScopedRequest(BaseModel):
+    """Base for every request body that may target a specific collection."""
+
     collection: str | None = None
 
 
-class QueryRequest(BaseModel):
+class PathRequest(CollectionScopedRequest):
+    path: str
+
+
+class QueryRequest(CollectionScopedRequest):
     question: str
-    collection: str | None = None
 
 
-class FolderIngestionRequest(BaseModel):
+class FolderIngestionRequest(CollectionScopedRequest):
     folder_path: str
-    collection: str | None = None
 
 
-class PipelineIngestionRequest(BaseModel):
-    path: str
-    collection: str | None = None
+@contextmanager
+def services_for(request: CollectionScopedRequest) -> Iterator[tuple[ServiceContainer, str]]:
+    """Resolve the service graph for a request and map any failure to a 500 response."""
+    collection_name = request.collection or settings.collection_name
+    try:
+        yield resolve_services(collection_name, app_state), collection_name
+    except Exception as exc:  # pragma: no cover - defensive boundary
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
 
 
 @app.get('/health')
@@ -85,44 +95,27 @@ def health_check() -> dict[str, str]:
 
 
 @app.post('/index')
-def index_document(request: IndexRequest) -> dict[str, str]:
-    try:
-        collection_name = request.collection or settings.collection_name
-        services = resolve_services(collection_name, app_state)
+def index_document(request: PathRequest) -> dict[str, str]:
+    with services_for(request) as (services, _):
         document = services.ingestion.index_document(request.path)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
     return {'status': 'indexed', 'source_id': document.source_id}
 
 
 @app.post('/query')
 def query_document(request: QueryRequest) -> dict[str, object]:
-    try:
-        collection_name = request.collection or settings.collection_name
-        services = resolve_services(collection_name, app_state)
-        response = services.answer.answer(request.question)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
-    return response
+    with services_for(request) as (services, _):
+        return services.answer.answer(request.question)
 
 
 @app.post('/ingest-folder')
 def ingest_folder(request: FolderIngestionRequest) -> dict[str, object]:
-    try:
-        collection_name = request.collection or settings.collection_name
-        services = resolve_services(collection_name, app_state)
+    with services_for(request) as (services, _):
         documents = services.ingestion.index_folder(request.folder_path)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
     return {'status': 'ingested', 'count': len(documents), 'sources': [doc.source_id for doc in documents]}
 
 
 @app.post('/ingest-pipeline')
-def ingest_with_pipeline(request: PipelineIngestionRequest) -> dict[str, object]:
-    try:
-        collection_name = request.collection or settings.collection_name
-        services = resolve_services(collection_name, app_state)
+def ingest_with_pipeline(request: PathRequest) -> dict[str, object]:
+    with services_for(request) as (services, collection_name):
         document = services.ingestion.process_document(request.path, collection_name=collection_name)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
     return {'status': 'processed', 'source_id': document.source_id, 'metadata': document.metadata}
