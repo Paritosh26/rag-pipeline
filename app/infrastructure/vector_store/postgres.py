@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from typing import Any
 
 from sqlalchemy import Column, Integer, String, Text, create_engine
@@ -9,6 +10,8 @@ from pgvector.sqlalchemy import Vector
 from app.domain.models import Chunk, RetrievedChunk
 from app.infrastructure.vector_store.base import VectorStore
 from app.config_util import settings as _settings
+
+logger = logging.getLogger(__name__)
 
 Base = declarative_base()
 
@@ -75,22 +78,30 @@ class PostgresVectorStore(VectorStore):
         from sqlalchemy import text
 
         with self.session_factory() as session:
-            for chunk, embedding in zip(chunks, embeddings, strict=True):
-                session.execute(
-                    text(
-                        f"INSERT INTO {self.table_name} (collection, source_id, chunk_index, content, embedding, chunk_metadata) "
-                        "VALUES (:collection, :source_id, :chunk_index, :content, :embedding, :chunk_metadata)"
-                    ),
-                    {
-                        'collection': self.collection,
-                        'source_id': chunk.source_id,
-                        'chunk_index': chunk.chunk_index,
-                        'content': chunk.content,
-                        'embedding': embedding,
-                        'chunk_metadata': str(chunk.metadata),
-                    },
+            try:
+                for chunk, embedding in zip(chunks, embeddings, strict=True):
+                    session.execute(
+                        text(
+                            f"INSERT INTO {self.table_name} (collection, source_id, chunk_index, content, embedding, chunk_metadata) "
+                            "VALUES (:collection, :source_id, :chunk_index, :content, :embedding, :chunk_metadata)"
+                        ),
+                        {
+                            'collection': self.collection,
+                            'source_id': chunk.source_id,
+                            'chunk_index': chunk.chunk_index,
+                            'content': chunk.content,
+                            'embedding': embedding,
+                            'chunk_metadata': str(chunk.metadata),
+                        },
+                    )
+                session.commit()
+            except Exception:
+                session.rollback()
+                logger.exception(
+                    'Failed to upsert %d chunk(s) into %s (collection=%s); transaction rolled back',
+                    len(chunks), self.table_name, self.collection,
                 )
-            session.commit()
+                raise
 
     def search(self, query_embedding: list[float], top_k: int) -> list[RetrievedChunk]:
         import ast
@@ -116,6 +127,9 @@ class PostgresVectorStore(VectorStore):
             try:
                 metadata = ast.literal_eval(row.chunk_metadata) if row.chunk_metadata else {}
             except (ValueError, SyntaxError):
+                logger.warning(
+                    'Could not parse chunk_metadata for source_id=%s; using empty metadata', row.source_id,
+                )
                 metadata = {}
             results.append(
                 RetrievedChunk(content=row.content, source_id=row.source_id, score=float(row.score), metadata=metadata)

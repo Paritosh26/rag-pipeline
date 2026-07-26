@@ -79,6 +79,23 @@ class PipelineIngestionRequest(BaseModel):
     collection: str | None = None
 
 
+def _http_error(operation: str, exc: Exception) -> HTTPException:
+    """Map a service-layer exception onto an HTTP error, logging the traceback.
+
+    Client mistakes (missing path, unsupported file type, document too short)
+    become 4xx with the original message; anything else is an unexpected
+    server-side failure and is reported as a 500 without leaking internals.
+    """
+    if isinstance(exc, FileNotFoundError):
+        logger.warning('%s failed: %s', operation, exc)
+        return HTTPException(status_code=404, detail=str(exc) or 'Path not found')
+    if isinstance(exc, (ValueError, IsADirectoryError, NotADirectoryError, UnicodeDecodeError)):
+        logger.warning('%s failed: %s', operation, exc)
+        return HTTPException(status_code=400, detail=str(exc))
+    logger.exception('%s failed unexpectedly', operation)
+    return HTTPException(status_code=500, detail=f'{operation} failed: {type(exc).__name__}')
+
+
 @app.get('/health')
 def health_check() -> dict[str, str]:
     return {'status': 'ok'}
@@ -90,19 +107,25 @@ def index_document(request: IndexRequest) -> dict[str, str]:
         collection_name = request.collection or settings.collection_name
         services = resolve_services(collection_name, app_state)
         document = services.ingestion.index_document(request.path)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise _http_error('Indexing', exc) from exc
     return {'status': 'indexed', 'source_id': document.source_id}
 
 
 @app.post('/query')
 def query_document(request: QueryRequest) -> dict[str, object]:
+    if not request.question.strip():
+        raise HTTPException(status_code=400, detail='question must not be empty')
     try:
         collection_name = request.collection or settings.collection_name
         services = resolve_services(collection_name, app_state)
         response = services.answer.answer(request.question)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise _http_error('Query', exc) from exc
     return response
 
 
@@ -112,8 +135,10 @@ def ingest_folder(request: FolderIngestionRequest) -> dict[str, object]:
         collection_name = request.collection or settings.collection_name
         services = resolve_services(collection_name, app_state)
         documents = services.ingestion.index_folder(request.folder_path)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise _http_error('Folder ingestion', exc) from exc
     return {'status': 'ingested', 'count': len(documents), 'sources': [doc.source_id for doc in documents]}
 
 
@@ -123,6 +148,8 @@ def ingest_with_pipeline(request: PipelineIngestionRequest) -> dict[str, object]
         collection_name = request.collection or settings.collection_name
         services = resolve_services(collection_name, app_state)
         document = services.ingestion.process_document(request.path, collection_name=collection_name)
-    except Exception as exc:  # pragma: no cover - defensive boundary
-        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise _http_error('Pipeline ingestion', exc) from exc
     return {'status': 'processed', 'source_id': document.source_id, 'metadata': document.metadata}

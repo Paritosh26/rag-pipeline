@@ -14,6 +14,19 @@ import yaml
 
 COLLECTIONS_PATH = Path(__file__).resolve().parents[1] / 'configs' / 'collections.yaml'
 
+
+def describe_error(exc: requests.exceptions.RequestException) -> str:
+    """Include the API's error detail, which carries the actual cause."""
+    response = exc.response
+    if response is None:
+        return str(exc)
+    try:
+        detail = response.json().get('detail')
+    except ValueError:
+        detail = response.text.strip()
+    return f'HTTP {response.status_code}: {detail}' if detail else str(exc)
+
+
 st.set_page_config(page_title='Biomedical RAG', page_icon='🧬', layout='centered')
 st.title('🧬 Biomedical RAG')
 
@@ -32,11 +45,13 @@ with st.sidebar:
         st.error(f'API unreachable: {exc}')
 
     st.header('Collection')
+    collections: list[str] = []
     if COLLECTIONS_PATH.exists():
-        all_collections = yaml.safe_load(COLLECTIONS_PATH.read_text(encoding='utf-8')) or {}
-        collections = sorted(all_collections.keys())
-    else:
-        collections = []
+        try:
+            all_collections = yaml.safe_load(COLLECTIONS_PATH.read_text(encoding='utf-8')) or {}
+            collections = sorted(all_collections.keys())
+        except (yaml.YAMLError, OSError) as exc:
+            st.error(f'Could not read {COLLECTIONS_PATH.name}: {exc}')
     collections = collections or ['default']
     # Default to sickle_cell (the collection with real ingested data) rather than
     # whichever name happens to sort first alphabetically.
@@ -55,7 +70,7 @@ with st.sidebar:
             response.raise_for_status()
             st.success(response.json())
         except requests.exceptions.RequestException as exc:
-            st.error(f'Ingestion failed: {exc}')
+            st.error(f'Ingestion failed: {describe_error(exc)}')
 
 st.subheader('Ask a question')
 question = st.text_area('Question', placeholder='What are the main clinical complications of sickle cell disease?')
@@ -70,10 +85,13 @@ if st.button('Ask', type='primary') and question.strip():
         response.raise_for_status()
         payload = response.json()
     except requests.exceptions.RequestException as exc:
-        st.error(f'Query failed: {exc}')
+        st.error(f'Query failed: {describe_error(exc)}')
     else:
         st.markdown('### Answer')
         st.write(payload['answer'])
+        llm_error = payload.get('lineage', {}).get('llm_error')
+        if llm_error:
+            st.warning(f'LLM generation failed, showing an extractive fallback answer: {llm_error}')
 
         st.markdown(f"### Citations ({len(payload['citations'])})")
         for i, citation in enumerate(payload['citations'], start=1):

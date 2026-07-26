@@ -22,4 +22,9 @@ class GeminiProvider(LLMProvider):
 
     def generate(self, prompt: str) -> str:
         response = self._client.models.generate_content(model=self.model_name, contents=prompt)
-        return response.text
+        text = response.text
+        if not text:
+            # A blocked/empty candidate yields text=None; raising lets the
+            # answer layer fall back instead of returning a null answer.
+            raise RuntimeError(f'Gemini model {self.model_name} returned no text for the prompt')
+        return text

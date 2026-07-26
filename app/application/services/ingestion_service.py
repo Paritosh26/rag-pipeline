@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import logging
+from contextlib import contextmanager
 from pathlib import Path
+from typing import Iterator
 
 from app.application.services.chunking_service import ChunkingService
 from app.application.services.extraction_service import ExtractionService
@@ -55,11 +57,18 @@ class IngestionService:
         if not folder.exists():
             raise FileNotFoundError(folder_path)
 
-        documents = [
-            self.index_document(str(path))
-            for path in sorted(folder.iterdir())
-            if path.is_file() and path.suffix.lower() in self.extraction_service.supported_extensions
-        ]
+        documents = []
+        for path in sorted(folder.iterdir()):
+            if not path.is_file() or path.suffix.lower() not in self.extraction_service.supported_extensions:
+                continue
+            try:
+                documents.append(self.index_document(str(path)))
+            except Exception:
+                logger.exception(
+                    'Failed to index %s after %d successful document(s); aborting folder ingestion',
+                    path, len(documents),
+                )
+                raise
         logger.info('Ingested %d document(s) from folder %s', len(documents), folder_path)
         return documents
 
@@ -73,30 +82,44 @@ class IngestionService:
                 self.status.mark_completed(file_path.stem, stage)
             return Document(source_id=file_path.stem, title=file_path.stem, content='', metadata={'skipped': True, 'checksum': checksum})
 
-        self.status.mark_started(file_path.stem, 'bronze')
-        text = self.extraction_service.extract_text_from_path(file_path)
-        if len(text) < self.min_document_length:
-            raise ValueError(f'Document too short for ingestion: {file_path}')
-        self.status.mark_completed(file_path.stem, 'bronze')
+        with self._stage(file_path.stem, 'bronze'):
+            text = self.extraction_service.extract_text_from_path(file_path)
+            if len(text) < self.min_document_length:
+                raise ValueError(f'Document too short for ingestion: {file_path}')
 
-        self.status.mark_started(file_path.stem, 'silver')
-        metadata = self.extraction_service.extract_metadata(file_path, text)
-        metadata['collection'] = collection_name
-        metadata['cleaned_length'] = len(text)
-        self.status.mark_completed(file_path.stem, 'silver')
+        with self._stage(file_path.stem, 'silver'):
+            metadata = self.extraction_service.extract_metadata(file_path, text)
+            metadata['collection'] = collection_name
+            metadata['cleaned_length'] = len(text)
 
         document = Document(source_id=file_path.stem, title=metadata.get('title') or file_path.stem, content=text, metadata=metadata)
         self.incremental_processing.mark_processed(file_path, checksum)
 
-        self.status.mark_started(file_path.stem, 'gold')
-        self._embed_and_store(document)
-        self.status.mark_completed(file_path.stem, 'gold')
+        with self._stage(file_path.stem, 'gold'):
+            self._embed_and_store(document)
 
         document.metadata['bronze_status'] = self.status.get_status(document.source_id).get('bronze')
         document.metadata['silver_status'] = self.status.get_status(document.source_id).get('silver')
         document.metadata['gold_status'] = self.status.get_status(document.source_id).get('gold')
         logger.info('Processed document %s through bronze/silver/gold (collection=%s)', document.source_id, collection_name)
         return document
+
+    @contextmanager
+    def _stage(self, source_id: str, stage: str) -> Iterator[None]:
+        """Run an ingestion stage, recording its outcome before propagating failures.
+
+        Without this, a failure mid-pipeline left the stage stuck at
+        'in_progress', so `get_summary` reported the document as merely
+        incomplete rather than failed.
+        """
+        self.status.mark_started(source_id, stage)
+        try:
+            yield
+        except Exception as exc:
+            self.status.mark_failed(source_id, stage, str(exc))
+            logger.exception('Stage %s failed for document %s', stage, source_id)
+            raise
+        self.status.mark_completed(source_id, stage)
 
     def _embed_and_store(self, document: Document) -> None:
         chunks = self.chunking_service.chunk_text(document.content, source_id=document.source_id)
