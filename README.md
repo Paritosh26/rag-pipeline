@@ -90,6 +90,24 @@ keyed by collection name. To add a new disease: add a block to that file, drop d
 no new table, no new file. All collections share one Postgres table (`document_chunks`), scoped by
 an indexed `collection` column, so adding a disease never touches the database schema.
 
+## Security
+
+- **Authentication** — set `API_KEY` in `.env` to require an `X-API-Key: <key>`
+  header on every endpoint except `/health`. When it is unset the API is
+  **unauthenticated** (fine for local demos, not for anything exposed on a
+  network); a warning is logged at startup in that case.
+
+  ```bash
+  curl -X POST http://localhost:8000/query \
+    -H 'Content-Type: application/json' -H "X-API-Key: $API_KEY" \
+    -d '{"question":"...","collection":"sickle_cell"}'
+  ```
+
+- **Ingestion paths** — the `path`/`folder_path` accepted by `/index`,
+  `/ingest-folder`, and `/ingest-pipeline` are confined to `ingestion_root`
+  (default `data/`, see [configs/application.yaml](configs/application.yaml)) so
+  the API cannot be coerced into reading arbitrary files off the host.
+
 ## Testing
 
 ```bash

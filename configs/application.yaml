@@ -21,6 +21,11 @@ default:
   database_pool_pre_ping: true
   vector_table_name: document_chunks
 
+  # Request-supplied ingestion paths (/index, /ingest-folder, /ingest-pipeline)
+  # are confined to this directory (resolved relative to the process working
+  # directory) so the API cannot be tricked into reading arbitrary host files.
+  ingestion_root: data
+
   # embedding_dimension MUST match what embedding_model actually produces
   # (all-MiniLM-L6-v2 -> 384). Changing embedding_model to a different-sized
   # model requires updating this too, or the pgvector column type will mismatch.

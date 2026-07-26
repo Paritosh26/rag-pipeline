@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     intended source of truth; `Settings.from_yaml()` is the only supported
     way to construct this class and always supplies the real values explicitly.
 
-    Secrets (DATABASE_URL, GEMINI_API_KEY) are the one exception: they come
+    Secrets (DATABASE_URL, GEMINI_API_KEY, API_KEY) are the one exception: they come
     only from environment variables / .env, never from YAML, so a committed
     config file can never silently override real deployment credentials.
     """
@@ -32,6 +32,15 @@ class Settings(BaseSettings):
     app_name: str = 'biomedical-rag'
     app_version: str = '0.1.0'
     debug: bool = False
+
+    # Untrusted request-supplied ingestion paths (/index, /ingest-folder,
+    # /ingest-pipeline) are constrained to live under this directory so the API
+    # cannot be coerced into reading arbitrary files off the host filesystem.
+    ingestion_root: str = 'data'
+    # Optional shared-secret API key. When set (via the API_KEY env var / .env),
+    # every endpoint except /health requires a matching `X-API-Key` header.
+    # Never comes from committed YAML -- it is a secret, like the two below.
+    api_key: str | None = None
 
     database_url: str = 'postgresql+psycopg://postgres:postgres@localhost:5432/rag'
     database_pool_size: int = 5
