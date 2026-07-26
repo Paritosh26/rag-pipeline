@@ -23,24 +23,13 @@ class InMemoryVectorStore(VectorStore):
     """
 
     def __init__(self) -> None:
-        self._entries: list[tuple[RetrievedChunk, list[float]]] = []
+        self._entries: list[tuple[Chunk, list[float]]] = []
 
     def initialize(self) -> None:
         return None
 
     def upsert(self, chunks: list[Chunk], embeddings: list[list[float]]) -> None:
-        for chunk, embedding in zip(chunks, embeddings, strict=True):
-            self._entries.append(
-                (
-                    RetrievedChunk(
-                        content=chunk.content,
-                        source_id=chunk.source_id,
-                        score=0.0,
-                        metadata=chunk.metadata,
-                    ),
-                    embedding,
-                )
-            )
+        self._entries.extend(zip(chunks, embeddings, strict=True))
 
     def search(self, query_embedding: list[float], top_k: int) -> list[RetrievedChunk]:
         scored = [
@@ -48,7 +37,4 @@ class InMemoryVectorStore(VectorStore):
             for chunk, embedding in self._entries
         ]
         scored.sort(key=lambda pair: pair[1], reverse=True)
-        return [
-            RetrievedChunk(content=chunk.content, source_id=chunk.source_id, score=score, metadata=chunk.metadata)
-            for chunk, score in scored[:top_k]
-        ]
+        return [RetrievedChunk.from_chunk(chunk, score) for chunk, score in scored[:top_k]]

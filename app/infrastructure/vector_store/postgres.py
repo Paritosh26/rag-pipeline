@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from typing import Any
+import ast
 
-from sqlalchemy import Column, Integer, String, Text, create_engine
+from sqlalchemy import Column, Integer, String, Text, create_engine, text
 from sqlalchemy.orm import declarative_base, sessionmaker
 from pgvector.sqlalchemy import Vector
 
@@ -72,8 +72,6 @@ class PostgresVectorStore(VectorStore):
         Base.metadata.create_all(self.engine)
 
     def upsert(self, chunks: list[Chunk], embeddings: list[list[float]]) -> None:
-        from sqlalchemy import text
-
         with self.session_factory() as session:
             for chunk, embedding in zip(chunks, embeddings, strict=True):
                 session.execute(
@@ -93,10 +91,6 @@ class PostgresVectorStore(VectorStore):
             session.commit()
 
     def search(self, query_embedding: list[float], top_k: int) -> list[RetrievedChunk]:
-        import ast
-
-        from sqlalchemy import text
-
         operator, score_expr = _METRIC_OPERATORS[self.similarity_metric]
         distance = f'embedding {operator} CAST(:query_embedding AS vector)'
         score = score_expr.format(distance=distance)
