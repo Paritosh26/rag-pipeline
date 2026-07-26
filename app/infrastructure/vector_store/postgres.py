@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from sqlalchemy import Column, Integer, String, Text, create_engine
@@ -18,6 +19,11 @@ _METRIC_OPERATORS = {
     'cosine': ('<=>', '1 - ({distance})'),
     'l2': ('<->', '-({distance})'),
 }
+
+# Table name is interpolated directly into SQL (it cannot be a bind parameter),
+# so it must be a plain SQL identifier -- reject anything that isn't, to keep
+# the config-driven value from being an injection vector.
+_IDENTIFIER_PATTERN = re.compile(r'^[A-Za-z_][A-Za-z0-9_]*$')
 
 
 class DocumentChunk(Base):
@@ -56,6 +62,8 @@ class PostgresVectorStore(VectorStore):
     ) -> None:
         if similarity_metric not in _METRIC_OPERATORS:
             raise ValueError(f'Unsupported similarity_metric: {similarity_metric!r} (expected one of {sorted(_METRIC_OPERATORS)})')
+        if not _IDENTIFIER_PATTERN.match(table_name):
+            raise ValueError(f'Invalid table_name (must be a plain SQL identifier): {table_name!r}')
 
         self.engine = create_engine(
             database_url,
