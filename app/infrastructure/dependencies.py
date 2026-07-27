@@ -8,6 +8,8 @@ from app.application.services.chunking_service import ChunkingService
 from app.application.services.ingestion_service import IngestionService
 from app.application.services.retrieval_service import RetrievalService
 from app.config_util import Settings
+from app.infrastructure.checksum_store.in_memory import InMemoryChecksumStore
+from app.infrastructure.checksum_store.postgres import PostgresChecksumStore
 from app.infrastructure.embedding.base import SentenceTransformerEmbeddingProvider
 from app.infrastructure.vector_store.in_memory import InMemoryVectorStore
 from app.infrastructure.vector_store.postgres import PostgresVectorStore
@@ -65,14 +67,34 @@ def build_services(collection_name: str | None = None) -> ServiceContainer:
             settings.database_url,
             exc_info=True,
         )
+        # remove this fallback when moving to production; we want to fail fast if Postgres is unavailable
         vector_store = InMemoryVectorStore()
         vector_store.initialize()
+
+    try:
+        checksum_store = PostgresChecksumStore(
+            database_url=settings.database_url,
+            pool_size=settings.database_pool_size,
+            max_overflow=settings.database_max_overflow,
+            pool_pre_ping=settings.database_pool_pre_ping,
+        )
+        checksum_store.initialize()
+    except Exception:
+        logger.warning(
+            'Could not connect to Postgres at %s; falling back to a non-persistent in-memory checksum store.',
+            settings.database_url,
+            exc_info=True,
+        )
+        # remove this fallback when moving to production; we want to fail fast if Postgres is unavailable
+        checksum_store = InMemoryChecksumStore()
+        checksum_store.initialize()
 
     ingestion_service = IngestionService(
         chunking_service=chunking_service,
         embedding_provider=embedding_provider,
         vector_store=vector_store,
         min_document_length=settings.min_document_length,
+        checksum_store=checksum_store,
     )
     retrieval_service = RetrievalService(
         embedding_provider=embedding_provider,

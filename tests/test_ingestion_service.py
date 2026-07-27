@@ -11,12 +11,18 @@ class StubExtractionService:
         return f'content of {Path(path).name}'
 
     def extract_metadata(self, path, text=None) -> dict:
-        return {'title': None, 'authors': [], 'keywords': [], 'publication_year': None, 'source_file': str(path)}
+        return {
+            'title': 'Stub Title',
+            'authors': ['Stub Author'],
+            'keywords': [],
+            'publication_year': 2020,
+            'source_file': str(path),
+        }
 
 
 class StubChunkingService:
-    def chunk_text(self, text: str, source_id: str):
-        return [Chunk(content=text, source_id=source_id, chunk_index=0)]
+    def chunk_text(self, text: str, source_id: str, document_metadata=None):
+        return [Chunk(content=text, source_id=source_id, chunk_index=0, metadata=document_metadata or {})]
 
 
 class StubEmbeddingProvider:
@@ -28,9 +34,14 @@ class StubVectorStore:
     def __init__(self) -> None:
         self.upserted_chunks: list[Chunk] = []
         self.upserted_embeddings: list[list[float]] = []
+        self.deleted_sources: list[str] = []
 
     def initialize(self) -> None:
         return None
+
+    def delete_by_source(self, source_id: str) -> None:
+        self.deleted_sources.append(source_id)
+        self.upserted_chunks = [chunk for chunk in self.upserted_chunks if chunk.source_id != source_id]
 
     def upsert(self, chunks, embeddings) -> None:
         self.upserted_chunks.extend(chunks)
@@ -60,8 +71,12 @@ def test_index_document_extracts_chunks_embeds_and_stores(tmp_path: Path) -> Non
     document = service.index_document(str(file_path))
 
     assert document.source_id == 'paper'
+    assert document.title == 'Stub Title'
     assert len(vector_store.upserted_chunks) == 1
     assert vector_store.upserted_embeddings == [[0.1, 0.2, 0.3]]
+    assert vector_store.upserted_chunks[0].metadata['title'] == 'Stub Title'
+    assert vector_store.upserted_chunks[0].metadata['authors'] == ['Stub Author']
+    assert vector_store.upserted_chunks[0].metadata['publication_year'] == 2020
 
 
 def test_index_folder_indexes_all_supported_files(tmp_path: Path) -> None:
@@ -96,6 +111,19 @@ def test_process_document_runs_end_to_end_with_metadata_and_status(tmp_path: Pat
     assert result.metadata['gold_status'] == 'completed'
     assert len(vector_store.upserted_chunks) == 1
     assert vector_store.upserted_chunks[0].source_id == 'paper'
+
+
+def test_index_document_replaces_existing_chunks_for_same_source(tmp_path: Path) -> None:
+    file_path = tmp_path / 'paper.txt'
+    file_path.write_text('unused - StubExtractionService supplies the content', encoding='utf-8')
+
+    service, vector_store = _build_service()
+
+    service.index_document(str(file_path))
+    service.index_document(str(file_path))
+
+    assert vector_store.deleted_sources == ['paper', 'paper']
+    assert len(vector_store.upserted_chunks) == 1
 
 
 def test_process_document_skips_unchanged_files_on_reprocessing(tmp_path: Path) -> None:

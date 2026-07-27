@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+import io
 import re
 from pathlib import Path
 from typing import Any
 
 import fitz
+from Bio import Medline
 
 
 class ExtractionService:
@@ -32,9 +34,12 @@ class ExtractionService:
             raw_text = file_path.read_text(encoding='utf-8')
         else:
             raise ValueError(f'Unsupported file type: {file_path.suffix}')
-        if raw_text.lstrip().startswith('PMID-'):
+        if self._is_medline_format(raw_text):
             raw_text = self._medline_content(raw_text)
         return self.clean_text(raw_text)
+
+    def _is_medline_format(self, text: str) -> bool:
+        return text.lstrip().startswith('PMID-')
 
     def _medline_content(self, text: str) -> str:
         """Reduce a raw MEDLINE/PubMed record to its title and abstract.
@@ -72,14 +77,36 @@ class ExtractionService:
         return cleaned.strip()
 
     def extract_metadata(self, path: str | Path, text: str | None = None) -> dict[str, Any]:
-        """Extract lightweight metadata (title, authors, keywords, year) from document text."""
+        """Extract lightweight metadata (title, authors, keywords, year) from document text.
+
+        By the time `text` reaches this method it may already be the cleaned,
+        title+abstract-only content (see `_medline_content`) with all MEDLINE
+        tags stripped -- so MEDLINE detection and parsing must happen against
+        the raw file on disk, not the `text` argument.
+        """
         file_path = Path(path)
-        content = text if text is not None else file_path.read_text(encoding='utf-8', errors='ignore')
+        raw_content = file_path.read_text(encoding='utf-8', errors='ignore')
+        if self._is_medline_format(raw_content):
+            return self._medline_metadata(raw_content, file_path)
+
+        content = text if text is not None else raw_content
         return {
             'title': self._find_first_match(self._TITLE_PATTERN, content),
             'authors': self._split_list(self._AUTHOR_PATTERN, content),
             'keywords': self._split_list(self._KEYWORD_PATTERN, content),
             'publication_year': self._extract_year(content),
+            'source_file': str(file_path),
+        }
+
+    def _medline_metadata(self, raw_content: str, file_path: Path) -> dict[str, Any]:
+        record = next(Medline.parse(io.StringIO(raw_content)), {})
+        authors = record.get('FAU') or record.get('AU') or []
+        title = (record.get('TI') or '').rstrip('.') or None
+        return {
+            'title': title,
+            'authors': list(authors),
+            'keywords': list(record.get('MH', [])),
+            'publication_year': self._extract_year(record.get('DP') or ''),
             'source_file': str(file_path),
         }
 

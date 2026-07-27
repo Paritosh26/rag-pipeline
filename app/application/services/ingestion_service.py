@@ -7,6 +7,7 @@ from app.application.services.chunking_service import ChunkingService
 from app.application.services.extraction_service import ExtractionService
 from app.application.services.ingestion_tracking import IncrementalProcessingService, IngestionStatusService
 from app.domain.models import Document
+from app.infrastructure.checksum_store.base import ChecksumStore
 from app.infrastructure.embedding.base import EmbeddingProvider
 from app.infrastructure.vector_store.base import VectorStore
 
@@ -31,13 +32,14 @@ class IngestionService:
         vector_store: VectorStore,
         extraction_service: ExtractionService | None = None,
         min_document_length: int = 20,
+        checksum_store: ChecksumStore | None = None,
     ) -> None:
         self.chunking_service = chunking_service
         self.embedding_provider = embedding_provider
         self.vector_store = vector_store
         self.extraction_service = extraction_service or ExtractionService()
         self.min_document_length = min_document_length
-        self.incremental_processing = IncrementalProcessingService()
+        self.incremental_processing = IncrementalProcessingService(checksum_store)
         self.status = IngestionStatusService()
 
     def index_document(self, path: str | Path) -> Document:
@@ -45,7 +47,9 @@ class IngestionService:
         self.vector_store.initialize()
         file_path = Path(path)
         text = self.extraction_service.extract_text_from_path(file_path)
-        document = Document(source_id=file_path.stem, title=file_path.stem, content=text, metadata={'path': str(file_path)})
+        metadata = self.extraction_service.extract_metadata(file_path, text)
+        metadata['path'] = str(file_path)
+        document = Document(source_id=file_path.stem, title=metadata.get('title') or file_path.stem, content=text, metadata=metadata)
         self._embed_and_store(document)
         return document
 
@@ -67,7 +71,7 @@ class IngestionService:
         """Ingest a document with checksum-based skip and staged status tracking."""
         file_path = Path(path)
         checksum = self.incremental_processing.compute_checksum(file_path)
-        if self.incremental_processing.should_skip(file_path, checksum):
+        if self.incremental_processing.should_skip(file_path, collection_name, checksum):
             logger.info('Skipping unchanged document %s (checksum match)', file_path.stem)
             for stage in ('bronze', 'silver', 'gold'):
                 self.status.mark_completed(file_path.stem, stage)
@@ -86,7 +90,7 @@ class IngestionService:
         self.status.mark_completed(file_path.stem, 'silver')
 
         document = Document(source_id=file_path.stem, title=metadata.get('title') or file_path.stem, content=text, metadata=metadata)
-        self.incremental_processing.mark_processed(file_path, checksum)
+        self.incremental_processing.mark_processed(file_path, collection_name, checksum)
 
         self.status.mark_started(file_path.stem, 'gold')
         self._embed_and_store(document)
@@ -99,10 +103,13 @@ class IngestionService:
         return document
 
     def _embed_and_store(self, document: Document) -> None:
-        chunks = self.chunking_service.chunk_text(document.content, source_id=document.source_id)
+        chunks = self.chunking_service.chunk_text(
+            document.content, source_id=document.source_id, document_metadata=document.metadata
+        )
         if not chunks:
             logger.warning('Document %s produced 0 chunks; nothing embedded or stored', document.source_id)
             return
         embeddings = self.embedding_provider.embed([chunk.content for chunk in chunks])
+        self.vector_store.delete_by_source(document.source_id)
         self.vector_store.upsert(chunks, embeddings)
         logger.info('Embedded and stored %d chunk(s) for document %s', len(chunks), document.source_id)

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List
+from typing import Any, List
 
 from app.domain.models import Chunk
 
@@ -12,11 +12,12 @@ class ChunkingService:
         self.chunk_size = chunk_size
         self.overlap = overlap
 
-    def chunk_text(self, text: str, source_id: str) -> List[Chunk]:
+    def chunk_text(self, text: str, source_id: str, document_metadata: dict[str, Any] | None = None) -> List[Chunk]:
         """Create overlapping chunks from a document body."""
         if not text.strip():
             return []
 
+        document_metadata = document_metadata or {}
         normalized = ' '.join(text.split())
         step = max(self.chunk_size - self.overlap, 1)
         chunks: List[Chunk] = []
@@ -33,7 +34,13 @@ class ChunkingService:
                     content=piece,
                     source_id=source_id,
                     chunk_index=index,
-                    metadata={'char_start': start, 'char_end': end},
+                    metadata={
+                        'title': document_metadata.get('title'),
+                        'authors': document_metadata.get('authors'),
+                        'publication_year': document_metadata.get('publication_year'),
+                        'char_start': start,
+                        'char_end': end,
+                    },
                 )
             )
             if end >= len(normalized):

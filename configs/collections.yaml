@@ -7,6 +7,7 @@ sickle_cell:
   chunk_size: 600
   chunk_overlap: 120
   retrieval_top_k: 5
+  pubmed_query: "sickle cell disease[MeSH Terms]"
 
 wilson:
   chunk_size: 600

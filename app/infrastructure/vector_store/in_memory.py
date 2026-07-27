@@ -42,6 +42,9 @@ class InMemoryVectorStore(VectorStore):
                 )
             )
 
+    def delete_by_source(self, source_id: str) -> None:
+        self._entries = [entry for entry in self._entries if entry[0].source_id != source_id]
+
     def search(self, query_embedding: list[float], top_k: int) -> list[RetrievedChunk]:
         scored = [
             (chunk, _cosine_similarity(query_embedding, embedding))

@@ -55,6 +55,14 @@ class Settings(BaseSettings):
     retrieval_score_threshold: float = 0.0
     min_document_length: int = 20
     collection_name: str = 'biomedical-papers'
+    pubmed_query: str | None = None
+
+    # Required by NCBI's E-utilities usage policy; not a secret, but has no
+    # safe default since it must identify a real caller. Validated at
+    # fetch-time (see /fetch-pubmed), not here, so the app still boots without it.
+    pubmed_entrez_email: str | None = None
+    # Optional, raises NCBI's rate limit when set. Env-only like gemini_api_key.
+    pubmed_entrez_api_key: str | None = None
 
     prompt_template: str = (
         'You answer using only the provided context.\n'

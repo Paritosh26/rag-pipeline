@@ -36,3 +36,17 @@ def test_search_returns_at_most_top_k_results() -> None:
 
     assert len(results) == 1
     assert results[0].source_id == 'doc-1'
+
+
+def test_delete_by_source_removes_only_matching_entries() -> None:
+    store = InMemoryVectorStore()
+    store.initialize()
+    store.upsert(
+        [Chunk(content='a', source_id='doc-1', chunk_index=0), Chunk(content='b', source_id='doc-2', chunk_index=0)],
+        [[1.0, 0.0], [0.0, 1.0]],
+    )
+
+    store.delete_by_source('doc-1')
+    results = store.search(query_embedding=[1.0, 0.0], top_k=10)
+
+    assert [chunk.source_id for chunk in results] == ['doc-2']

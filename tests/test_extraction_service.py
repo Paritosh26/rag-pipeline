@@ -71,3 +71,84 @@ def test_extract_metadata_extracts_title_and_keywords(tmp_path: Path) -> None:
     assert metadata['authors'] == ['Jane Doe', 'John Smith']
     assert metadata['keywords'] == ['oncology', 'biomarkers']
     assert metadata['publication_year'] == 2024
+
+
+def test_extract_metadata_parses_medline_title_authors_keywords_year(tmp_path: Path) -> None:
+    file_path = tmp_path / 'pubmed-11111111.txt'
+    file_path.write_text(
+        'PMID- 11111111\n'
+        'TI  - Sickle Cell Disease.\n'
+        'AB  - Sickle cell disease is a hemoglobinopathy.\n'
+        'FAU - Rees, David C\n'
+        'AU  - Rees DC\n'
+        'MH  - Acute Chest Syndrome/etiology/therapy\n'
+        'MH  - Anemia, Sickle Cell/complications\n'
+        'DP  - 2017 Apr 20\n',
+        encoding='utf-8',
+    )
+
+    service = ExtractionService()
+    metadata = service.extract_metadata(file_path)
+
+    assert metadata['title'] == 'Sickle Cell Disease'
+    assert metadata['authors'] == ['Rees, David C']
+    assert metadata['keywords'] == ['Acute Chest Syndrome/etiology/therapy', 'Anemia, Sickle Cell/complications']
+    assert metadata['publication_year'] == 2017
+
+
+def test_extract_metadata_falls_back_to_au_when_fau_missing(tmp_path: Path) -> None:
+    file_path = tmp_path / 'pubmed-22222222.txt'
+    file_path.write_text(
+        'PMID- 22222222\n'
+        'TI  - A Study Without Full Author Names.\n'
+        'AU  - Rees DC\n'
+        'DP  - 2015\n',
+        encoding='utf-8',
+    )
+
+    service = ExtractionService()
+    metadata = service.extract_metadata(file_path)
+
+    assert metadata['authors'] == ['Rees DC']
+
+
+def test_extract_metadata_handles_missing_dp(tmp_path: Path) -> None:
+    file_path = tmp_path / 'pubmed-33333333.txt'
+    file_path.write_text(
+        'PMID- 33333333\n'
+        'TI  - A Study With No Publication Date.\n',
+        encoding='utf-8',
+    )
+
+    service = ExtractionService()
+    metadata = service.extract_metadata(file_path)
+
+    assert metadata['publication_year'] is None
+
+
+def test_extract_metadata_dp_year_only(tmp_path: Path) -> None:
+    file_path = tmp_path / 'pubmed-44444444.txt'
+    file_path.write_text(
+        'PMID- 44444444\n'
+        'TI  - A Study With Year-Only Publication Date.\n'
+        'DP  - 2010\n',
+        encoding='utf-8',
+    )
+
+    service = ExtractionService()
+    metadata = service.extract_metadata(file_path)
+
+    assert metadata['publication_year'] == 2010
+
+
+def test_extract_metadata_degenerate_medline_record_has_no_crash(tmp_path: Path) -> None:
+    file_path = tmp_path / 'pubmed-55555555.txt'
+    file_path.write_text('PMID- 55555555\n', encoding='utf-8')
+
+    service = ExtractionService()
+    metadata = service.extract_metadata(file_path)
+
+    assert metadata['title'] is None
+    assert metadata['authors'] == []
+    assert metadata['keywords'] == []
+    assert metadata['publication_year'] is None

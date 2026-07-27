@@ -92,6 +92,16 @@ class PostgresVectorStore(VectorStore):
                 )
             session.commit()
 
+    def delete_by_source(self, source_id: str) -> None:
+        from sqlalchemy import text
+
+        with self.session_factory() as session:
+            session.execute(
+                text(f"DELETE FROM {self.table_name} WHERE collection = :collection AND source_id = :source_id"),
+                {'collection': self.collection, 'source_id': source_id},
+            )
+            session.commit()
+
     def search(self, query_embedding: list[float], top_k: int) -> list[RetrievedChunk]:
         import ast
 

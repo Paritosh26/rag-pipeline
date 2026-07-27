@@ -9,15 +9,18 @@ def test_checksum_is_stable_and_documents_can_be_skipped(tmp_path) -> None:
     checksum = service.compute_checksum(str(file_path))
     assert checksum
 
-    skipped_on_first_run = service.should_skip(str(file_path), checksum)
+    skipped_on_first_run = service.should_skip(str(file_path), 'diabetes', checksum)
     assert skipped_on_first_run is False
 
-    service.mark_processed(str(file_path), checksum)
-    skipped_on_second_run = service.should_skip(str(file_path), checksum)
+    service.mark_processed(str(file_path), 'diabetes', checksum)
+    skipped_on_second_run = service.should_skip(str(file_path), 'diabetes', checksum)
     assert skipped_on_second_run is True
 
-    changed = service.should_skip(str(file_path), 'different-checksum')
+    changed = service.should_skip(str(file_path), 'diabetes', 'different-checksum')
     assert changed is False
+
+    other_collection = service.should_skip(str(file_path), 'sickle_cell', checksum)
+    assert other_collection is False
 
 
 def test_status_service_tracks_progress_and_failure() -> None:

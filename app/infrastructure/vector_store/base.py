@@ -17,5 +17,9 @@ class VectorStore(ABC):
         """Persist chunks and their vectors."""
 
     @abstractmethod
+    def delete_by_source(self, source_id: str) -> None:
+        """Remove any previously stored chunks for a source document."""
+
+    @abstractmethod
     def search(self, query_embedding: list[float], top_k: int) -> list[RetrievedChunk]:
         """Search for the closest chunks."""

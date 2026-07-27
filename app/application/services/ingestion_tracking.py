@@ -4,29 +4,34 @@ import hashlib
 from pathlib import Path
 from typing import Any
 
+from app.infrastructure.checksum_store.base import ChecksumStore
+from app.infrastructure.checksum_store.in_memory import InMemoryChecksumStore
+
 # Bookkeeping for the ingestion process: idempotency (checksums) and stage
-# progress (status) are both small, in-memory concerns of the same capability
-# -- tracking what has happened to a document as it moves through ingestion.
+# progress (status) are both small concerns of the same capability -- tracking
+# what has happened to a document as it moves through ingestion. Checksums are
+# persisted via a ChecksumStore (Postgres by default, see dependencies.py) so
+# skip decisions survive process restarts; status is still in-memory only.
 
 
 class IncrementalProcessingService:
     """Track checksums and decide whether a document should be skipped or reprocessed."""
 
-    def __init__(self) -> None:
-        self._checksums: dict[str, str] = {}
+    def __init__(self, checksum_store: ChecksumStore | None = None) -> None:
+        self.checksum_store = checksum_store or InMemoryChecksumStore()
 
     def compute_checksum(self, path: str | Path) -> str:
         file_path = Path(path)
         return hashlib.sha256(file_path.read_bytes()).hexdigest()
 
-    def should_skip(self, path: str | Path, checksum: str) -> bool:
+    def should_skip(self, path: str | Path, collection: str, checksum: str) -> bool:
         file_path = Path(path)
         current_checksum = self.compute_checksum(file_path)
-        previous_checksum = self._checksums.get(str(file_path))
+        previous_checksum = self.checksum_store.get_checksum(str(file_path), collection)
         return previous_checksum is not None and previous_checksum == checksum and checksum == current_checksum
 
-    def mark_processed(self, path: str | Path, checksum: str) -> None:
-        self._checksums[str(Path(path))] = checksum
+    def mark_processed(self, path: str | Path, collection: str, checksum: str) -> None:
+        self.checksum_store.set_checksum(str(Path(path)), collection, checksum)
 
 
 class IngestionStatusService:

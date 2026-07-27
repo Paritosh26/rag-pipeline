@@ -11,6 +11,7 @@ from pydantic import BaseModel
 
 from app.config_util import Settings
 from app.infrastructure.dependencies import ServiceContainer, build_services
+from app.infrastructure.pubmed.entrez_fetcher import EntrezPubMedFetcher
 
 settings = Settings.from_yaml()
 
@@ -79,6 +80,12 @@ class PipelineIngestionRequest(BaseModel):
     collection: str | None = None
 
 
+class PubMedFetchRequest(BaseModel):
+    collection: str | None = None
+    query: str | None = None
+    max_results: int = 20
+
+
 @app.get('/health')
 def health_check() -> dict[str, str]:
     return {'status': 'ok'}
@@ -105,7 +112,7 @@ def query_document(request: QueryRequest) -> dict[str, object]:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     return response
 
-
+# Remove when moving to Prod 
 @app.post('/ingest-folder')
 def ingest_folder(request: FolderIngestionRequest) -> dict[str, object]:
     try:
@@ -126,3 +133,25 @@ def ingest_with_pipeline(request: PipelineIngestionRequest) -> dict[str, object]
     except Exception as exc:  # pragma: no cover - defensive boundary
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     return {'status': 'processed', 'source_id': document.source_id, 'metadata': document.metadata}
+
+
+# Remove when moving to Prod -- manually-triggered only, not wired to any scheduler.
+@app.post('/fetch-pubmed')
+def fetch_pubmed(request: PubMedFetchRequest) -> dict[str, object]:
+    collection_name = request.collection or settings.collection_name
+    collection_settings = Settings.from_yaml(collection_name=collection_name)
+    query = request.query or collection_settings.pubmed_query
+    if not query:
+        raise HTTPException(status_code=400, detail='No PubMed query provided or configured for this collection.')
+    if not collection_settings.pubmed_entrez_email:
+        raise HTTPException(status_code=400, detail='PUBMED_ENTREZ_EMAIL must be set to use NCBI Entrez.')
+
+    try:
+        fetcher = EntrezPubMedFetcher(
+            email=collection_settings.pubmed_entrez_email,
+            api_key=collection_settings.pubmed_entrez_api_key,
+        )
+        paths = fetcher.fetch_and_save(query, collection_name, max_results=request.max_results)
+    except Exception as exc:  # pragma: no cover - defensive boundary
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    return {'status': 'fetched', 'collection': collection_name, 'count': len(paths), 'files': [str(p) for p in paths]}
